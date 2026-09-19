@@ -25,6 +25,12 @@
         <spring-boot.version>4.1.1</spring-boot.version>
         <springdoc.version>2.3.0</springdoc.version>
 
+        <!-- Spring Boot 4.1.x still pins the Logback 1.5.x line (1.5.38 in its BOM),
+             while java-company-standards tracks the newest 1.6.x line. Keep logback
+             on the Spring Boot line to avoid classic/core drift. JUnit 6.x is used
+             by Spring Boot 4.x, so the inherited junit.version 6.1.3 is kept. -->
+        <logback.version>1.5.38</logback.version>
+
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
     </properties>
 

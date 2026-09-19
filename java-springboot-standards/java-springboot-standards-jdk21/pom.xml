@@ -25,6 +25,13 @@
         <spring-boot.version>3.5.3</spring-boot.version>
         <springdoc.version>2.3.0</springdoc.version>
 
+        <!-- Spring Boot 3.5.x ships the Logback 1.5.x line and supports JUnit 5.
+             Keep these on lines that Spring Boot 3.5 actually uses; the plain
+             java-company-standards template tracks the newest releases. -->
+        <jackson.version>2.17.2</jackson.version>
+        <logback.version>1.5.38</logback.version>
+        <junit.version>5.14.4</junit.version>
+
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
     </properties>
 

@@ -100,7 +100,9 @@ POM that sits in the consumer's parent chain.**
 | Library versions that must differ per flavor (e.g. `logback.version`) | `java-springboot-standards-jdkXX/pom.xml` |
 | Library versions shared by all flavors (JUnit, Jackson, ...) | `java-company-standards/pom.xml` (template) |
 
-Example — JDK 21 currently pairs Spring Boot 3.5.3 with Logback 1.5.16:
+Example — JDK 21 currently pairs Spring Boot 3.5.3 with Logback 1.5.38 and JUnit 5.14.4
+(the `java-company-standards` template tracks JUnit 6.x for the Java 25 line, which Spring
+Boot 3.x does not use):
 
 ```xml
 <!-- java-springboot-standards-jdk21/pom.xml -->
@@ -108,7 +110,8 @@ Example — JDK 21 currently pairs Spring Boot 3.5.3 with Logback 1.5.16:
     <java.version>21</java.version>
     <maven.compiler.release>21</maven.compiler.release>
     <spring-boot.version>3.5.3</spring-boot.version>
-    <logback.version>1.5.16</logback.version>
+    <logback.version>1.5.38</logback.version>
+    <junit.version>5.14.4</junit.version>
 </properties>
 ```
 
@@ -128,8 +131,8 @@ the Spring Boot `spring-boot-dependencies` BOM. Because of that:
   pair cannot drift. Mismatched versions break at runtime:
   - classic > core: `NoClassDefFoundError: ch/qos/logback/core/util/StatusPrinter2`
   - classic < core: `PatternLayout ... getDefaultConverterSupplierMap()`
-- Spring Boot 3.2.x uses the Logback 1.4.x line, Spring Boot 3.5.x the 1.5.x line. Keep the
-  flavor's `logback.version` on the same line as its `spring-boot.version`.
+- Spring Boot 3.2.x uses the Logback 1.4.x line, Spring Boot 3.5.x and 4.x the 1.5.x line.
+  Keep the flavor's `logback.version` on the same line as its `spring-boot.version`.
 
 ## Adding a new JDK flavor
 
