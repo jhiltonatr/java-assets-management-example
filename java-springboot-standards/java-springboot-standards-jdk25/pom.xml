@@ -25,12 +25,32 @@
         <spring-boot.version>4.1.1</spring-boot.version>
         <springdoc.version>2.3.0</springdoc.version>
 
-        <!-- Spring Boot 4.1.x still pins the Logback 1.5.x line (1.5.38 in its BOM),
-             while java-company-standards tracks the newest 1.6.x line. Keep logback
-             on the Spring Boot line to avoid classic/core drift. JUnit 6.x is used
-             by Spring Boot 4.x, so the inherited junit.version 6.1.3 is kept. -->
-        <logback.version>1.5.38</logback.version>
+        <!-- Spring Boot 4.1.x ships Logback 1.5.38 and Jackson 3.1.5 in its BOM.
+             Logback is raised to the CVE-fixed line 1.6.3 (CVE-2026-19880) via the
+             inherited java-company-standards dependencyManagement, which pins classic
+             and core to the same ${logback.version}. Jackson 3 is pinned to 3.1.6
+             (CVE-2026-83557) by importing tools.jackson:jackson-bom below; the
+             property alone is NOT enough because the Spring Boot BOM interpolates
+             its own property at import time. JUnit 6.x is used by Spring Boot 4.x,
+             so the inherited junit.version 6.1.3 is kept. -->
+        <jackson-bom.version>3.1.6</jackson-bom.version>
+        <logback.version>1.6.3</logback.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Pin Jackson 3 (tools.jackson) at a CVE-fixed version. Declared here
+                 (closer to consumers than the spring-boot-dependencies import), so
+                 it wins for every tools.jackson artifact. -->
+            <dependency>
+                <groupId>tools.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${jackson-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>
