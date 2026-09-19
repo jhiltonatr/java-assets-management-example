@@ -30,8 +30,6 @@
              on the Spring Boot line to avoid classic/core drift. JUnit 6.x is used
              by Spring Boot 4.x, so the inherited junit.version 6.1.3 is kept. -->
         <logback.version>1.5.38</logback.version>
-
-        <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
     </properties>
 
     <build>
