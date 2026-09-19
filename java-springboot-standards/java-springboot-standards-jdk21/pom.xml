@@ -21,7 +21,6 @@
         <java.version>21</java.version>
         <maven.compiler.release>21</maven.compiler.release>
         <spring-boot.version>3.5.3</spring-boot.version>
-        <logback.version>1.5.16</logback.version>
         <springdoc.version>2.3.0</springdoc.version>
 
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
