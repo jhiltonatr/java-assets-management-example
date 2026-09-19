@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example.company</groupId>
+        <artifactId>java-company-standards</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../java-company-standards/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>java-springboot-standards</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Java Spring Boot Standards</name>
+    <description>
+        Shared scope that layers the Spring Boot settings on top of the plain-Java company
+        standards: imports the Spring Boot dependencies BOM and manages the
+        spring-boot-maven-plugin. It is extended by the concrete artifacts
+        java-springboot-standards-jdk17 and java-springboot-standards-jdk21, which pin the JDK
+        level. Consumers should use the concrete -jdkXX BOMs.
+    </description>
+
+    <properties>
+        <spring-boot.version>3.2.12</spring-boot.version>
+        <springdoc.version>2.3.0</springdoc.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Boot platform BOM. Entries managed here and in the inherited
+                 java-company-standards parent take precedence over this import, so the
+                 company standards keep winning on shared library versions. -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Going beyond the Spring Boot platform BOM -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                    <executions>
+                        <execution>
+                            <id>repackage</id>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

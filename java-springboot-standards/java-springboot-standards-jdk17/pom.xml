@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example.company</groupId>
+        <artifactId>java-springboot-standards</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>java-springboot-standards-jdk17</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Java Spring Boot Standards (JDK 17)</name>
+    <description>Spring Boot standards BOM on top of java-company-standards-jdk17.</description>
+
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
+
+   <build>
+       <pluginManagement>
+           <plugins>
+               <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-checkstyle-plugin</artifactId>
+                   <dependencies>
+                       <dependency>
+                           <groupId>com.example.company</groupId>
+                           <artifactId>java-company-standards-jdk17</artifactId>
+                           <version>1.0.0-SNAPSHOT</version>
+                       </dependency>
+                   </dependencies>
+               </plugin>
+           </plugins>
+       </pluginManagement>
+   </build>
+</project>
