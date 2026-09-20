@@ -66,6 +66,32 @@ cd sample-springboot-app
 mvn clean spring-boot:run
 ```
 
+## BOM reference documentation
+
+Each `java-springboot-standards` module ships an auto-generated reference doc that lists the
+**effective** dependency and plugin versions of that flavor:
+
+- `docs/java-springboot-standards/1.0.0-SNAPSHOT/BOM-reference.md` (shared template defaults)
+- `docs/java-springboot-standards-jdk17/1.0.0-SNAPSHOT/BOM-reference.md`
+- `docs/java-springboot-standards-jdk21/1.0.0-SNAPSHOT/BOM-reference.md`
+- `docs/java-springboot-standards-jdk25/1.0.0-SNAPSHOT/BOM-reference.md`
+
+The docs are rendered by a generic Groovy generator (`bom-docs.groovy`, run via `gmavenplus-plugin`'s
+`execute` goal bound to the `generate-resources` phase in the `java-springboot-standards` template
+POM). The script reads each module's **effective Maven model** directly - `dependencyManagement`
+(including imported platform BOMs, which Maven expands into the effective model),
+`pluginManagement`, applied plugins and version properties - so the tables are derived from the
+POMs themselves. Adding or bumping a library, importing a BOM or changing a plugin version anywhere
+in a flavour's parent chain is reflected automatically on the next build. No templates to hand-edit,
+no drift from the actual list. The output path includes the module version
+(`docs/<artifactId>/<version>/BOM-reference.md`).
+
+Regenerate from the repository root:
+
+```
+mvn generate-resources
+```
+
 ## Using the standards in your application
 
 As a parent (recommended): all standards (JDK level, plugin config, repositories) are inherited
