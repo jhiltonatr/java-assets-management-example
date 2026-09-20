@@ -29,6 +29,70 @@ def managed = project?.dependencyManagement?.dependencies ?: []
 def mgmtPlugins = project?.build?.pluginManagement?.plugins ?: []
 def appliedPlugins = project?.build?.plugins ?: []
 
+def cveSevRank = { String s ->
+    ['critical': 0, 'high': 1, 'medium': 2, 'moderate': 2, 'low': 3, 'info': 4, 'n/a': 5]
+        .getOrDefault((s ?: 'n/a').toLowerCase(), 5)
+}
+
+/*
+ * CVE data comes from the OWASP dependency-check reports of the scanned consumer applications
+ * (one per JDK flavor under <repo-root>/test-applications/), because a 'pom'-packaging BOM module
+ * resolves no libraries to scan itself. All reports found are merged into one GAV -> CVEs index;
+ * the -Ddependency.checkReport=... user property can point at a single explicit file instead.
+ */
+def cveReportFiles = []
+def appDir = project.basedir
+while (appDir != null && !new File(appDir, 'test-applications').isDirectory()) { appDir = appDir.parentFile }
+if (props['dependency.checkReport']) {
+    cveReportFiles = [new File(props['dependency.checkReport'].toString())]
+} else if (appDir != null) {
+    new File(appDir, 'test-applications').listFiles().each { candidate ->
+        if (candidate.isDirectory() && candidate.name.startsWith('sample-springboot-app-jdk' + project?.properties['maven.compiler.release'])) {
+            def rep = new File(candidate, 'target/dependency-check-report.json')
+            if (rep.isFile()) cveReportFiles << rep
+        }
+    }
+}
+cveReportFiles = cveReportFiles.findAll { it.isFile() }
+
+def cveByGav = [:]
+def cveReportSummaries = [:]
+cveReportFiles.each { repFile ->
+    try {
+        def rep = new groovy.json.JsonSlurper().parse(repFile)
+        (rep.dependencies ?: []).each { d ->
+            (d.packages ?: []).each { p ->
+                def purl = p.id?.toString()
+                if (purl?.startsWith('pkg:maven/')) {
+                    def rest = purl.substring('pkg:maven/'.length())
+                    def at = rest.lastIndexOf('@')
+                    if (at > 0) {
+                        def coords = rest.substring(0, at)
+                        def slash = coords.indexOf('/')
+                        if (slash > 0) {
+                            def g = coords.substring(0, slash).toLowerCase()
+                            def a = coords.substring(slash + 1).toLowerCase()
+                            def version = rest.substring(at + 1)
+                            cveByGav["$g:$a:$version"] = (d.vulnerabilities ?: []).collect { v ->
+                                [id: v.name ?: 'n/a', severity: v.severity ?: 'n/a',
+                                 score: v.cvssScore ?: null, source: v.source ?: '']
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        def vulnerable = (rep.dependencies ?: []).findAll { d -> !(d.vulnerabilities ?: []).isEmpty() }
+        cveReportSummaries[repFile.absolutePath] = [
+                project: rep.projectName ?: repFile.parentFile.parentFile.name,
+                depsScanned: (rep.dependencies ?: []).size(),
+                vulnDeps: vulnerable.size(),
+                vulnsFound: vulnerable.sum { d -> (d.vulnerabilities ?: []).size() } ?: 0]
+    } catch (Exception e) {
+        // skip a broken report silently
+    }
+}
+
 def out = new StringBuilder()
 def md = { String s = '' -> out.append(s).append('\n') }
 
@@ -75,12 +139,22 @@ md()
 if (managed.empty) {
     md('*None.*')
 } else {
-    md('| groupId | artifactId | type | classifier | version |')
-    md('| :--- | :--- | :--- | :--- | :--- |')
+    md('| groupId | artifactId | type | classifier | version | known CVEs |')
+    md('| :--- | :--- | :--- | :--- | :--- | :--- |')
     managed.sort { "$it.groupId:$it.artifactId" }.each { d ->
         def type = d.type ?: 'jar'
         def classifier = d.classifier ?: '-'
-        md("| `${d.groupId}` | `${d.artifactId}` | `${type}` | `${classifier}` | `${d.version ?: 'n/a'}` |")
+        def cveCell = '-'
+        if (d.version) {
+            def cves = cveByGav["${d.groupId.toLowerCase()}:${d.artifactId.toLowerCase()}:${d.version}"]
+            if (cves) {
+                cves.sort { a, b -> cveSevRank(a.severity) <=> cveSevRank(b.severity) }
+                cveCell = cves.collect { c ->
+                    c.score != null ? "`${c.id}` (${c.severity.toLowerCase()}, ${c.score})" : "`${c.id}` (${c.severity.toLowerCase()})"
+                }.join('<br>')
+            }
+        }
+        md("| `${d.groupId}` | `${d.artifactId}` | `${type}` | `${classifier}` | `${d.version ?: 'n/a'}` | $cveCell |")
     }
 }
 md()
@@ -166,6 +240,83 @@ md('</dependencyManagement>')
 md('```')
 md()
 md('When declaring dependencies, **omit the `<version>` element** to inherit the approved version.')
+md()
+md('---')
+md()
+md('## Vulnerability Scanning (CVEs)')
+md()
+def dcVersion = props['dependency-check.version'] ?: 'n/a'
+md('Dependencies are checked with **OWASP dependency-check**')
+md("(`org.owasp:dependency-check-maven`, version `$dcVersion`), managed for every module that inherits")
+md('these standards. It works **keyless**: the NVD API is accessed unauthenticated (throttled to one')
+md('request per 8 seconds) and the Google OSV feed provides additional coverage without any key. To')
+md('lift the NVD throttle, supply an API key via `-DnvdApiKey=...`, the `NVD_API_KEY` environment')
+md('variable, or a Maven `settings.xml` server entry referenced by `nvdApiServerId`.')
+md()
+md('Scanning is **opt-in** - it is not bound to the build lifecycle because it needs network access')
+md('and performs a one-time NVD feed download on the first run. Scan each consumer application')
+md('(one per JDK flavor under `test-applications/`; the first run downloads the NVD feed and may')
+md('take a while):')
+md()
+md('```')
+md('mvn -f test-applications/sample-springboot-app-jdk17/pom.xml org.owasp:dependency-check-maven:check')
+md('mvn -f test-applications/sample-springboot-app-jdk-21/pom.xml org.owasp:dependency-check-maven:check')
+md('mvn -f test-applications/sample-springboot-app-jdk-25/pom.xml org.owasp:dependency-check-maven:check')
+md('```')
+md()
+md('Scan the whole repository (aggregated report in the reactor root `target/`):')
+md()
+md('```')
+md('mvn -f pom.xml org.owasp:dependency-check-maven:aggregate')
+md('```')
+md()
+md('Reports are written as `target/dependency-check-report.html` and')
+md('`target/dependency-check-report.json`. A `pom`-packaging BOM module resolves no libraries to')
+md('scan, so the scan runs against the **consumer applications** under `test-applications/`. Every')
+md('report found there is merged into a single per-GAV CVE index at generation time and annotated')
+md('per library version in the **Managed Dependencies** table above (`known CVEs` column, matched on')
+md('the exact GAV). Regenerate (`mvn generate-resources`) after a re-scan to refresh everything.')
+md()
+if (!cveReportSummaries.isEmpty()) {
+    def totalFindings = cveByGav.values().findAll { !it.isEmpty() }.flatten().size()
+    md('### Last local scan')
+    md()
+    md('| metric | value |')
+    md('| :--- | :--- |')
+    md("| scanned applications | `${cveReportSummaries.size()}` |")
+    md("| unique packages scanned | `${cveByGav.size()}` |")
+    md("| unique vulnerable packages | `${cveByGav.count { k, v -> !v.isEmpty() }}` |")
+    md("| vulnerabilities found | `$totalFindings` |")
+    md()
+    md('Per application:')
+    md()
+    cveReportSummaries.each { path, s ->
+        md("- `${s.project}`: `${s.depsScanned}` packages scanned, `${s.vulnDeps}` vulnerable, `${s.vulnsFound}` findings")
+    }
+    md()
+    def annotated = managed.count { d ->
+        d.version && cveByGav["${d.groupId.toLowerCase()}:${d.artifactId.toLowerCase()}:${d.version}"]
+    }
+    if (annotated > 0) {
+        md('Findings are annotated per library version in the **Known CVEs** column of the **Managed')
+        md("Dependencies** table above. Full details: each app's `target/dependency-check-report.html`.")
+    } else {
+        md('None of the library versions managed in this BOM were resolved by any scanned application,')
+        md('so the scan results do not annotate the Managed Dependencies table (the `known CVEs` column')
+        md("stays empty). Full details: each app's `target/dependency-check-report.html`.")
+    }
+} else {
+    md('**No local scan results yet.** Run the `check` goal against each consumer application under')
+    md('`test-applications/` (first run downloads the NVD feed and may take a while), then regenerate')
+    md('to embed the findings:')
+    md()
+    md('```')
+    md('mvn -f test-applications/sample-springboot-app-jdk17/pom.xml org.owasp:dependency-check-maven:check')
+    md('mvn -f test-applications/sample-springboot-app-jdk-21/pom.xml org.owasp:dependency-check-maven:check')
+    md('mvn -f test-applications/sample-springboot-app-jdk-25/pom.xml org.owasp:dependency-check-maven:check')
+    md('mvn generate-resources')
+    md('```')
+}
 md()
 md('---')
 md()

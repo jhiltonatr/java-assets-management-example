@@ -35,5 +35,22 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- OWASP dependency-check (CVE scanning). Pinned to 12.2.2 - 13.0.x currently fails to
+             update the NVD feed without an API key (empty nvd.api.key is treated as a supplied
+             key and aborts with "Invalid API Key, length of 0"; see dependency-check #8715). -->
+        <dependency-check.version>12.2.2</dependency-check.version>
     </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <version>${dependency-check.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

@@ -5,12 +5,15 @@ Maven project, so each artifact ships with a stable, concrete `artifactId` (no p
 dynamic coordinates):
 
 - `java-company-standards` — shared plain-Java settings template (defaults to JDK 17)
-- `java-company-standards-jdk17` / `java-company-standards-jdk21` — plain-Java BOMs, one per JDK
+- `java-company-standards-jdk17` / `java-company-standards-jdk21` / `java-company-standards-jdk25` —
+  plain-Java BOMs, one per JDK
 - `java-springboot-standards` — shared Spring Boot settings template
-- `java-springboot-standards-jdk17` / `java-springboot-standards-jdk21` — Spring Boot BOMs built on
-  the matching company variant
-- `sample-springboot-app` — standalone demo app consuming `java-springboot-standards-jdk21` from
-  the local repository (it is intentionally NOT part of the aggregator reactor)
+- `java-springboot-standards-jdk17` / `java-springboot-standards-jdk21` / `java-springboot-standards-jdk25` —
+  Spring Boot BOMs built on the matching company variant
+- `sample-springboot-app-jdk17` / `sample-springboot-app-jdk-21` / `sample-springboot-app-jdk-25` —
+  standalone demo apps under `test-applications/`, one per Spring Boot flavor, each consuming its
+  matching `java-springboot-standards-jdkXX` parent from the local repository. They are
+  intentionally NOT part of the aggregator reactor.
 
 ## Layout
 
@@ -20,14 +23,17 @@ maven-assets/
 ├── java-company-standards/
 │   ├── pom.xml                                    java-company-standards (template)
 │   ├── java-company-standards-jdk17/pom.xml
-│   └── java-company-standards-jdk21/pom.xml
+│   ├── java-company-standards-jdk21/pom.xml
+│   └── java-company-standards-jdk25/pom.xml
 ├── java-springboot-standards/
 │   ├── pom.xml                                    java-springboot-standards (template)
 │   ├── java-springboot-standards-jdk17/pom.xml
-│   └── java-springboot-standards-jdk21/pom.xml
-└── sample-springboot-app/
-    ├── pom.xml
-    └── src/...
+│   ├── java-springboot-standards-jdk21/pom.xml
+│   └── java-springboot-standards-jdk25/pom.xml
+└── test-applications/
+    ├── sample-springboot-app-jdk17/   <- parent java-springboot-standards-jdk17
+    ├── sample-springboot-app-jdk-21/  <- parent java-springboot-standards-jdk21
+    └── sample-springboot-app-jdk-25/  <- parent java-springboot-standards-jdk25
 ```
 
 ## How it works
@@ -62,8 +68,7 @@ local cache, so they must be (re)installed whenever the standards change:
 
 ```
 mvn install -U     # refresh after editing the standards
-cd sample-springboot-app
-mvn clean spring-boot:run
+mvn -f test-applications/sample-springboot-app-jdk-21/pom.xml clean spring-boot:run
 ```
 
 ## BOM reference documentation
@@ -91,6 +96,35 @@ Regenerate from the repository root:
 ```
 mvn generate-resources
 ```
+
+### CVE scanning
+
+Every doc ends with a **Vulnerability Scanning (CVEs)** section. The generator documents OWASP
+dependency-check (`org.owasp:dependency-check-maven`, version pinned in the root aggregator),
+which runs **keyless** - NVD API unauthenticated (throttled) plus the Google OSV feed, with an
+optional NVD API key via `-DnvdApiKey`, `NVD_API_KEY`, or a `settings.xml` server. Scanning is opt-in and not bound to the lifecycle. Because a `pom`-packaging BOM resolves no
+libraries to scan, the scan runs against the **consumer applications** under `test-applications/`
+(one per JDK flavor); the generator then embeds the findings in every BOM reference doc:
+
+```
+mvn -f test-applications/sample-springboot-app-jdk17/pom.xml org.owasp:dependency-check-maven:check
+mvn -f test-applications/sample-springboot-app-jdk-21/pom.xml org.owasp:dependency-check-maven:check
+mvn -f test-applications/sample-springboot-app-jdk-25/pom.xml org.owasp:dependency-check-maven:check
+mvn -f pom.xml org.owasp:dependency-check-maven:aggregate   # whole repo
+```
+
+When any app's `target/dependency-check-report.json` exists, the generator:
+
+- merges **all** app reports into one per-GAV CVE index,
+- adds a **`known CVEs`** column to the **Managed Dependencies** table and annotates every
+  library whose exact GAV was found in any scan (severity-sorted CVE list per version), and
+- renders a short **Last local scan** summary (metrics per application + a pointer to the HTML
+  reports).
+
+Regenerate (`mvn generate-resources`) after a re-scan to refresh the docs. Note: the scan needs
+network access and downloads the NVD feed on the first run (a cached NVD DB makes later scans
+work offline). A flavor whose managed versions are not part of any scanned application's
+resolved set will simply show an empty `known CVEs` column.
 
 ## Using the standards in your application
 

@@ -457,7 +457,26 @@
                         </dependency>
                     </dependencies>
                 </plugin>
+
+                <plugin>
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <version>${dependency-check.version}</version>
+                    <!-- Opt-in CVE scanning (invoke the goal directly; NOT bound to the lifecycle):
+                         mvn org.owasp:dependency-check-maven:check
+                         Works keyless against the throttled NVD API plus the keyless OSV feed. To
+                         lift the throttle, supply an NVD API key via -DnvdApiKey=..., the
+                         NVD_API_KEY environment variable, or a Maven settings.xml server entry
+                         referenced through nvdApiServerId. -->
+                    <configuration>
+                        <formats>
+                            <format>HTML</format>
+                            <format>JSON</format>
+                        </formats>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
 </project>
+

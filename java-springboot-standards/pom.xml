@@ -76,7 +76,6 @@
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
                 <version>5.0.0</version>
-                <inherited>false</inherited>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.groovy</groupId>
@@ -90,6 +89,12 @@
                         <version>5.0.6</version>
                         <scope>runtime</scope>
                     </dependency>
+                    <dependency>
+                        <groupId>org.apache.groovy</groupId>
+                        <artifactId>groovy-json</artifactId>
+                        <version>5.0.6</version>
+                        <scope>runtime</scope>
+                    </dependency>
                 </dependencies>
                 <executions>
                     <execution>
@@ -100,7 +105,25 @@
                         </goals>
                         <configuration>
                             <scripts>
-                                <script>${maven.multiModuleProjectDirectory}/java-springboot-standards/src/main/resources/bom-docs.groovy</script>
+                                <script><![CDATA[
+                                    // Locate the shared generator by walking up from this module's basedir.
+                                    // Works for the template itself, the -jdkXX flavors and standalone
+                                    // consumers like sample-springboot-app (whose multiModuleProjectDirectory
+                                    // is not the reactor root).
+                                    def scriptFile = null
+                                    def dir = project.basedir
+                                    while (dir != null) {
+                                        def candidate = new File(dir, "java-springboot-standards/src/main/resources/bom-docs.groovy")
+                                        if (candidate.exists()) { scriptFile = candidate; break }
+                                        dir = dir.parentFile
+                                    }
+                                    if (scriptFile != null) {
+                                        log.info("Executing external script: " + scriptFile.absolutePath)
+                                        evaluate(scriptFile)
+                                    } else {
+                                        log.warn("Could not locate bom-docs.groovy for " + project.artifactId)
+                                    }
+                                    ]]></script>
                             </scripts>
                         </configuration>
                     </execution>

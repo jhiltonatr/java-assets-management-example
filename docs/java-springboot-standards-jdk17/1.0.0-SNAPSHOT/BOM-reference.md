@@ -38,1478 +38,1478 @@ Properties table. No separate enumeration is needed and nothing can drift from t
 The fully resolved managed set from the effective model. This includes everything declared directly
 plus the expanded contents of imported platform BOMs.
 
-| groupId | artifactId | type | classifier | version |
-| :--- | :--- | :--- | :--- | :--- |
-| `biz.aQute.bnd` | `biz.aQute.bnd.annotation` | `jar` | `-` | `6.4.1` |
-| `ch.qos.logback` | `logback-access` | `jar` | `-` | `1.4.14` |
-| `ch.qos.logback` | `logback-classic` | `jar` | `-` | `1.4.14` |
-| `ch.qos.logback` | `logback-core` | `jar` | `-` | `1.4.14` |
-| `co.elastic.clients` | `elasticsearch-java` | `jar` | `-` | `8.10.4` |
-| `com.couchbase.client` | `java-client` | `jar` | `-` | `3.4.11` |
-| `com.datastax.oss` | `java-driver-core` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `java-driver-core-shaded` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `java-driver-mapper-processor` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `java-driver-mapper-runtime` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `java-driver-metrics-micrometer` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `java-driver-metrics-microprofile` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `java-driver-query-builder` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `java-driver-shaded-guava` | `jar` | `-` | `25.1-jre-graal-sub-1` |
-| `com.datastax.oss` | `java-driver-test-infra` | `jar` | `-` | `4.17.0` |
-| `com.datastax.oss` | `native-protocol` | `jar` | `-` | `1.5.1` |
-| `com.fasterxml.jackson.core` | `jackson-annotations` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.core` | `jackson-core` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.core` | `jackson-databind` | `jar` | `-` | `2.17.2` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-avro` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-cbor` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-csv` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-ion` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-properties` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-protobuf` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-smile` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-toml` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-xml` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-yaml` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-eclipse-collections` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-guava` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate4` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate5` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate5-jakarta` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate6` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-hppc` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-jakarta-jsonp` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-jaxrs` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-jdk8` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-joda` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-joda-money` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-json-org` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-jsr310` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-jsr353` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.datatype` | `jackson-datatype-pcollections` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-base` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-cbor-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-json-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-smile-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-xml-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-yaml-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-base` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-cbor-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-json-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-smile-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-xml-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-yaml-provider` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jr` | `jackson-jr-all` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jr` | `jackson-jr-annotation-support` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jr` | `jackson-jr-objects` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jr` | `jackson-jr-retrofit2` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.jr` | `jackson-jr-stree` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-afterburner` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-blackbird` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-guice` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-jakarta-xmlbind-annotations` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-jaxb-annotations` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-jsonSchema` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-jsonSchema-jakarta` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-kotlin` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-mrbean` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-no-ctor-deser` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-osgi` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-parameter-names` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-paranamer` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-scala_2.11` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-scala_2.12` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-scala_2.13` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml.jackson.module` | `jackson-module-scala_3` | `jar` | `-` | `2.15.4` |
-| `com.fasterxml` | `classmate` | `jar` | `-` | `1.6.0` |
-| `com.github.ben-manes.caffeine` | `caffeine` | `jar` | `-` | `3.1.8` |
-| `com.github.ben-manes.caffeine` | `guava` | `jar` | `-` | `3.1.8` |
-| `com.github.ben-manes.caffeine` | `jcache` | `jar` | `-` | `3.1.8` |
-| `com.github.ben-manes.caffeine` | `simulator` | `jar` | `-` | `3.1.8` |
-| `com.github.mxab.thymeleaf.extras` | `thymeleaf-extras-data-attribute` | `jar` | `-` | `2.0.1` |
-| `com.github.spotbugs` | `spotbugs-annotations` | `jar` | `-` | `4.7.3` |
-| `com.google.code.gson` | `gson` | `jar` | `-` | `2.10.1` |
-| `com.google.guava` | `guava` | `jar` | `-` | `33.7.1-jre` |
-| `com.graphql-java` | `graphql-java` | `jar` | `-` | `21.5` |
-| `com.h2database` | `h2` | `jar` | `-` | `2.2.224` |
-| `com.hazelcast` | `hazelcast` | `jar` | `-` | `5.3.8` |
-| `com.hazelcast` | `hazelcast-spring` | `jar` | `-` | `5.3.8` |
-| `com.ibm.db2` | `jcc` | `jar` | `-` | `11.5.9.0` |
-| `com.jayway.jsonpath` | `json-path` | `jar` | `-` | `2.9.0` |
-| `com.jayway.jsonpath` | `json-path-assert` | `jar` | `-` | `2.9.0` |
-| `com.microsoft.sqlserver` | `mssql-jdbc` | `jar` | `-` | `12.4.2.jre11` |
-| `com.mysql` | `mysql-connector-j` | `jar` | `-` | `8.3.0` |
-| `com.oracle.database.ha` | `ons` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.ha` | `simplefan` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc11-debug` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc11-observability-debug` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc11_g` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc11dms_g` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc8-debug` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc8-observability-debug` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc8_g` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc.debug` | `ojdbc8dms_g` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc` | `ojdbc11` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc` | `ojdbc11-production` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc` | `ojdbc8` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc` | `ojdbc8-production` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc` | `rsi` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc` | `ucp` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.jdbc` | `ucp11` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.nls` | `orai18n` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.observability` | `dms` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.observability` | `ojdbc11-observability` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.observability` | `ojdbc11dms` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.observability` | `ojdbc8-observability` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.observability` | `ojdbc8dms` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.r2dbc` | `oracle-r2dbc` | `jar` | `-` | `1.1.1` |
-| `com.oracle.database.security` | `oraclepki` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.security` | `osdt_cert` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.security` | `osdt_core` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.xml` | `xdb` | `jar` | `-` | `21.9.0.0` |
-| `com.oracle.database.xml` | `xmlparserv2` | `jar` | `-` | `21.9.0.0` |
-| `com.querydsl` | `querydsl-apt` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-codegen` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-codegen-utils` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-collections` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-core` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-guava` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-hibernate-search` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-jdo` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-jpa` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-jpa-codegen` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-kotlin` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-kotlin-codegen` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-lucene3` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-lucene4` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-lucene5` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-mongodb` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-scala` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-spatial` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-sql` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-sql-codegen` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-sql-spatial` | `jar` | `-` | `5.0.0` |
-| `com.querydsl` | `querydsl-sql-spring` | `jar` | `-` | `5.0.0` |
-| `com.rabbitmq` | `amqp-client` | `jar` | `-` | `5.19.0` |
-| `com.rabbitmq` | `stream-client` | `jar` | `-` | `0.14.0` |
-| `com.samskivert` | `jmustache` | `jar` | `-` | `1.15` |
-| `com.sendgrid` | `sendgrid-java` | `jar` | `-` | `4.9.3` |
-| `com.squareup.okhttp3` | `logging-interceptor` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `mockwebserver` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `okcurl` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `okhttp` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `okhttp-brotli` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `okhttp-dnsoverhttps` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `okhttp-sse` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `okhttp-tls` | `jar` | `-` | `4.12.0` |
-| `com.squareup.okhttp3` | `okhttp-urlconnection` | `jar` | `-` | `4.12.0` |
-| `com.sun.istack` | `istack-commons-runtime` | `jar` | `-` | `4.1.2` |
-| `com.sun.xml.bind` | `jaxb-core` | `jar` | `sources` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-core` | `jar` | `-` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-impl` | `jar` | `sources` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-impl` | `jar` | `-` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-jxc` | `jar` | `sources` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-jxc` | `jar` | `-` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-osgi` | `jar` | `-` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-xjc` | `jar` | `sources` | `4.0.5` |
-| `com.sun.xml.bind` | `jaxb-xjc` | `jar` | `-` | `4.0.5` |
-| `com.sun.xml.fastinfoset` | `FastInfoset` | `jar` | `sources` | `2.1.1` |
-| `com.sun.xml.fastinfoset` | `FastInfoset` | `jar` | `-` | `2.1.1` |
-| `com.sun.xml.messaging.saaj` | `saaj-impl` | `jar` | `-` | `3.0.4` |
-| `com.unboundid` | `unboundid-ldapsdk` | `jar` | `-` | `6.0.11` |
-| `com.zaxxer` | `HikariCP` | `jar` | `-` | `5.0.1` |
-| `commons-codec` | `commons-codec` | `jar` | `-` | `1.16.1` |
-| `commons-pool` | `commons-pool` | `jar` | `-` | `1.6` |
-| `io.asyncer` | `r2dbc-mysql` | `jar` | `-` | `1.0.6` |
-| `io.dropwizard.metrics` | `metrics-annotation` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-caffeine` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-caffeine3` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-collectd` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-core` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-ehcache` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-graphite` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-healthchecks` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-httpasyncclient` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-httpclient` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-httpclient5` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jakarta-servlet` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jakarta-servlet6` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jakarta-servlets` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jcache` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jdbi` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jdbi3` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jersey2` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jersey3` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jersey31` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jetty10` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jetty11` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jetty12` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jetty12-ee10` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jetty9` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jmx` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-json` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-jvm` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-log4j2` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-logback` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-logback13` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-logback14` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-logback15` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-servlet` | `jar` | `-` | `4.2.28` |
-| `io.dropwizard.metrics` | `metrics-servlets` | `jar` | `-` | `4.2.28` |
-| `io.lettuce` | `lettuce-core` | `jar` | `-` | `6.3.2.RELEASE` |
-| `io.micrometer` | `docs` | `jar` | `-` | `1.2.12` |
-| `io.micrometer` | `micrometer-commons` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-core` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-jakarta9` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-jetty11` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-observation` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-observation-test` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-appoptics` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-atlas` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-azure-monitor` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-cloudwatch` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-cloudwatch2` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-datadog` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-dynatrace` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-elastic` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-ganglia` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-graphite` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-health` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-humio` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-influx` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-jmx` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-kairos` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-new-relic` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-opentsdb` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-otlp` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-prometheus` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-signalfx` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-stackdriver` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-statsd` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-registry-wavefront` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-test` | `jar` | `-` | `1.12.13` |
-| `io.micrometer` | `micrometer-tracing` | `jar` | `-` | `1.2.12` |
-| `io.micrometer` | `micrometer-tracing-bridge-brave` | `jar` | `-` | `1.2.12` |
-| `io.micrometer` | `micrometer-tracing-bridge-otel` | `jar` | `-` | `1.2.12` |
-| `io.micrometer` | `micrometer-tracing-integration-test` | `jar` | `-` | `1.2.12` |
-| `io.micrometer` | `micrometer-tracing-reporter-wavefront` | `jar` | `-` | `1.2.12` |
-| `io.micrometer` | `micrometer-tracing-test` | `jar` | `-` | `1.2.12` |
-| `io.netty` | `netty-all` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-buffer` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-dns` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-haproxy` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-http` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-http2` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-memcache` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-mqtt` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-redis` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-smtp` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-socks` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-stomp` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-codec-xml` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-common` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-dev-tools` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-example` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-handler` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-handler-proxy` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-handler-ssl-ocsp` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-resolver` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-resolver-dns` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-resolver-dns-classes-macos` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-resolver-dns-native-macos` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-resolver-dns-native-macos` | `jar` | `osx-x86_64` | `4.1.115.Final` |
-| `io.netty` | `netty-resolver-dns-native-macos` | `jar` | `osx-aarch_64` | `4.1.115.Final` |
-| `io.netty` | `netty-tcnative` | `jar` | `linux-x86_64` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative` | `jar` | `linux-x86_64-fedora` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative` | `jar` | `linux-aarch_64-fedora` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative` | `jar` | `osx-x86_64` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `-` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `linux-x86_64` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `linux-aarch_64` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `osx-x86_64` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `osx-aarch_64` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `windows-x86_64` | `2.0.69.Final` |
-| `io.netty` | `netty-tcnative-classes` | `jar` | `-` | `2.0.69.Final` |
-| `io.netty` | `netty-transport` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-classes-epoll` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-classes-kqueue` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-epoll` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-epoll` | `jar` | `linux-aarch_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-epoll` | `jar` | `linux-riscv64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-epoll` | `jar` | `linux-x86_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-kqueue` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-kqueue` | `jar` | `osx-x86_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-kqueue` | `jar` | `osx-aarch_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-unix-common` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-unix-common` | `jar` | `linux-aarch_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-unix-common` | `jar` | `linux-riscv64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-unix-common` | `jar` | `linux-x86_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-unix-common` | `jar` | `osx-x86_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-native-unix-common` | `jar` | `osx-aarch_64` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-rxtx` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-sctp` | `jar` | `-` | `4.1.115.Final` |
-| `io.netty` | `netty-transport-udt` | `jar` | `-` | `4.1.115.Final` |
-| `io.opentelemetry` | `opentelemetry-api` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-context` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-common` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-jaeger` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-jaeger-proto` | `jar` | `-` | `1.17.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-jaeger-thrift` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-logging` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-logging-otlp` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-otlp` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-otlp-common` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-sender-grpc-managed-channel` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-sender-okhttp` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-exporter-zipkin` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-extension-annotations` | `jar` | `-` | `1.18.0` |
-| `io.opentelemetry` | `opentelemetry-extension-aws` | `jar` | `-` | `1.20.1` |
-| `io.opentelemetry` | `opentelemetry-extension-kotlin` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-extension-trace-propagators` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-opentracing-shim` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-common` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-extension-autoconfigure` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-extension-autoconfigure-spi` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-extension-aws` | `jar` | `-` | `1.19.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-extension-jaeger-remote-sampler` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-extension-resources` | `jar` | `-` | `1.19.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-logs` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-metrics` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-testing` | `jar` | `-` | `1.31.0` |
-| `io.opentelemetry` | `opentelemetry-sdk-trace` | `jar` | `-` | `1.31.0` |
-| `io.projectreactor.addons` | `reactor-adapter` | `jar` | `-` | `3.5.2` |
-| `io.projectreactor.addons` | `reactor-extra` | `jar` | `-` | `3.5.2` |
-| `io.projectreactor.addons` | `reactor-pool` | `jar` | `-` | `1.0.8` |
-| `io.projectreactor.addons` | `reactor-pool-micrometer` | `jar` | `-` | `0.1.8` |
-| `io.projectreactor.kafka` | `reactor-kafka` | `jar` | `-` | `1.3.23` |
-| `io.projectreactor.kotlin` | `reactor-kotlin-extensions` | `jar` | `-` | `1.2.3` |
-| `io.projectreactor.netty` | `reactor-netty` | `jar` | `-` | `1.1.24` |
-| `io.projectreactor.netty` | `reactor-netty-core` | `jar` | `-` | `1.1.24` |
-| `io.projectreactor.netty` | `reactor-netty-http` | `jar` | `-` | `1.1.24` |
-| `io.projectreactor.netty` | `reactor-netty-http-brave` | `jar` | `-` | `1.1.24` |
-| `io.projectreactor` | `reactor-core` | `jar` | `-` | `3.6.12` |
-| `io.projectreactor` | `reactor-core-micrometer` | `jar` | `-` | `1.1.12` |
-| `io.projectreactor` | `reactor-test` | `jar` | `-` | `3.6.12` |
-| `io.projectreactor` | `reactor-tools` | `jar` | `-` | `3.6.12` |
-| `io.prometheus` | `simpleclient` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_caffeine` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_common` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_dropwizard` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_graphite_bridge` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_guava` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_hibernate` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_hotspot` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_httpserver` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_jetty` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_jetty_jdk8` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_log4j` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_log4j2` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_logback` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_pushgateway` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_servlet` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_servlet_jakarta` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_spring_boot` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_spring_web` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_tracer_common` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_tracer_otel` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_tracer_otel_agent` | `jar` | `-` | `0.16.0` |
-| `io.prometheus` | `simpleclient_vertx` | `jar` | `-` | `0.16.0` |
-| `io.r2dbc` | `r2dbc-h2` | `jar` | `-` | `1.0.0.RELEASE` |
-| `io.r2dbc` | `r2dbc-mssql` | `jar` | `-` | `1.0.2.RELEASE` |
-| `io.r2dbc` | `r2dbc-pool` | `jar` | `-` | `1.0.2.RELEASE` |
-| `io.r2dbc` | `r2dbc-proxy` | `jar` | `-` | `1.1.5.RELEASE` |
-| `io.r2dbc` | `r2dbc-spi` | `jar` | `-` | `1.0.0.RELEASE` |
-| `io.reactivex.rxjava3` | `rxjava` | `jar` | `-` | `3.1.9` |
-| `io.rest-assured` | `json-path` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `json-schema-validator` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `kotlin-extensions` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `rest-assured` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `rest-assured-all` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `rest-assured-common` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `scala-support` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `spring-commons` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `spring-mock-mvc` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `spring-mock-mvc-kotlin-extensions` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `spring-web-test-client` | `jar` | `-` | `5.3.2` |
-| `io.rest-assured` | `xml-path` | `jar` | `-` | `5.3.2` |
-| `io.rsocket` | `rsocket-core` | `jar` | `-` | `1.1.3` |
-| `io.rsocket` | `rsocket-load-balancer` | `jar` | `-` | `1.1.3` |
-| `io.rsocket` | `rsocket-micrometer` | `jar` | `-` | `1.1.3` |
-| `io.rsocket` | `rsocket-test` | `jar` | `-` | `1.1.3` |
-| `io.rsocket` | `rsocket-transport-local` | `jar` | `-` | `1.1.3` |
-| `io.rsocket` | `rsocket-transport-netty` | `jar` | `-` | `1.1.3` |
-| `io.spring.gradle` | `dependency-management-plugin` | `jar` | `-` | `1.1.6` |
-| `io.undertow` | `undertow-core` | `jar` | `-` | `2.3.17.Final` |
-| `io.undertow` | `undertow-servlet` | `jar` | `-` | `2.3.17.Final` |
-| `io.undertow` | `undertow-websockets-jsr` | `jar` | `-` | `2.3.17.Final` |
-| `io.zipkin.brave` | `brave` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-context-jfr` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-context-log4j12` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-context-log4j2` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-context-rxjava2` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-context-slf4j` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-dubbo` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-dubbo-rpc` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-grpc` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-http` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-http-tests` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-httpasyncclient` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-httpclient` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-jaxrs2` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-jersey-server` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-jms` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-jms-jakarta` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-kafka-clients` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-kafka-streams` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-messaging` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-mongodb` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-mysql` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-mysql6` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-mysql8` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-netty-codec-http` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-okhttp3` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-p6spy` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-rpc` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-servlet` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-servlet-jakarta` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-sparkjava` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-spring-rabbit` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-spring-web` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-spring-webmvc` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-instrumentation-vertx-web` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-spring-beans` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.brave` | `brave-tests` | `jar` | `-` | `5.16.0` |
-| `io.zipkin.proto3` | `zipkin-proto3` | `jar` | `-` | `1.0.0` |
-| `io.zipkin.reporter2` | `zipkin-reporter` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-reporter-brave` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-reporter-metrics-micrometer` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-reporter-spring-beans` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-sender-activemq-client` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-sender-amqp-client` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-sender-kafka` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-sender-kafka08` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-sender-libthrift` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-sender-okhttp3` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.reporter2` | `zipkin-sender-urlconnection` | `jar` | `-` | `2.16.3` |
-| `io.zipkin.zipkin2` | `zipkin` | `jar` | `-` | `2.23.2` |
-| `jakarta.activation` | `jakarta.activation-api` | `jar` | `-` | `2.1.3` |
-| `jakarta.annotation` | `jakarta.annotation-api` | `jar` | `-` | `2.1.1` |
-| `jakarta.jms` | `jakarta.jms-api` | `jar` | `-` | `3.1.0` |
-| `jakarta.json.bind` | `jakarta.json.bind-api` | `jar` | `-` | `3.0.1` |
-| `jakarta.json` | `jakarta.json-api` | `jar` | `-` | `2.1.3` |
-| `jakarta.mail` | `jakarta.mail-api` | `jar` | `-` | `2.1.3` |
-| `jakarta.management.j2ee` | `jakarta.management.j2ee-api` | `jar` | `-` | `1.1.4` |
-| `jakarta.persistence` | `jakarta.persistence-api` | `jar` | `-` | `3.1.0` |
-| `jakarta.servlet.jsp.jstl` | `jakarta.servlet.jsp.jstl-api` | `jar` | `-` | `3.0.2` |
-| `jakarta.servlet` | `jakarta.servlet-api` | `jar` | `-` | `6.0.0` |
-| `jakarta.transaction` | `jakarta.transaction-api` | `jar` | `-` | `2.0.1` |
-| `jakarta.validation` | `jakarta.validation-api` | `jar` | `-` | `3.0.2` |
-| `jakarta.websocket` | `jakarta.websocket-api` | `jar` | `-` | `2.1.1` |
-| `jakarta.websocket` | `jakarta.websocket-client-api` | `jar` | `-` | `2.1.1` |
-| `jakarta.ws.rs` | `jakarta.ws.rs-api` | `jar` | `-` | `3.1.0` |
-| `jakarta.xml.bind` | `jakarta.xml.bind-api` | `jar` | `-` | `4.0.2` |
-| `jakarta.xml.bind` | `jakarta.xml.bind-api` | `jar` | `sources` | `4.0.2` |
-| `jakarta.xml.soap` | `jakarta.xml.soap-api` | `jar` | `-` | `3.0.2` |
-| `jakarta.xml.ws` | `jakarta.xml.ws-api` | `jar` | `-` | `4.0.2` |
-| `javax.cache` | `cache-api` | `jar` | `-` | `1.1.1` |
-| `javax.money` | `money-api` | `jar` | `-` | `1.1` |
-| `jaxen` | `jaxen` | `jar` | `-` | `2.0.0` |
-| `junit` | `junit` | `jar` | `-` | `4.13.2` |
-| `net.bytebuddy` | `byte-buddy` | `jar` | `-` | `1.14.19` |
-| `net.bytebuddy` | `byte-buddy-agent` | `jar` | `-` | `1.14.19` |
-| `net.minidev` | `json-smart` | `jar` | `-` | `2.5.1` |
-| `net.sourceforge.htmlunit` | `htmlunit` | `jar` | `-` | `2.70.0` |
-| `net.sourceforge.jtds` | `jtds` | `jar` | `-` | `1.3.1` |
-| `net.sourceforge.nekohtml` | `nekohtml` | `jar` | `-` | `1.9.22` |
-| `nz.net.ultraq.thymeleaf` | `thymeleaf-layout-dialect` | `jar` | `-` | `3.3.0` |
-| `org.apache.activemq` | `activemq-amqp` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-blueprint` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-broker` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-client` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-client-jakarta` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-console` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-http` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-jaas` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-jdbc-store` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-jms-pool` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-kahadb-store` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-karaf` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-log4j-appender` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-mqtt` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-openwire-generator` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-openwire-legacy` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-osgi` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-partition` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-pool` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-ra` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-run` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-runtime-config` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-shiro` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-spring` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-stomp` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `activemq-web` | `jar` | `-` | `5.18.6` |
-| `org.apache.activemq` | `artemis-amqp-protocol` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-commons` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-core-client` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-jakarta-client` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-jakarta-server` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-jakarta-service-extensions` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-jdbc-store` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-journal` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-quorum-api` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-selector` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-server` | `jar` | `-` | `2.31.2` |
-| `org.apache.activemq` | `artemis-service-extensions` | `jar` | `-` | `2.31.2` |
-| `org.apache.commons` | `commons-dbcp2` | `jar` | `-` | `2.10.0` |
-| `org.apache.commons` | `commons-lang3` | `jar` | `-` | `3.20.0` |
-| `org.apache.commons` | `commons-pool2` | `jar` | `-` | `2.12.0` |
-| `org.apache.derby` | `derby` | `jar` | `-` | `10.16.1.1` |
-| `org.apache.derby` | `derbyclient` | `jar` | `-` | `10.16.1.1` |
-| `org.apache.derby` | `derbynet` | `jar` | `-` | `10.16.1.1` |
-| `org.apache.derby` | `derbyoptionaltools` | `jar` | `-` | `10.16.1.1` |
-| `org.apache.derby` | `derbyshared` | `jar` | `-` | `10.16.1.1` |
-| `org.apache.derby` | `derbytools` | `jar` | `-` | `10.16.1.1` |
-| `org.apache.groovy` | `groovy` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-ant` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-astbuilder` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-cli-commons` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-cli-picocli` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-console` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-contracts` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-datetime` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-dateutil` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-docgenerator` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-ginq` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-groovydoc` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-groovysh` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-jmx` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-json` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-jsr223` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-macro` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-macro-library` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-nio` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-servlet` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-sql` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-swing` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-templates` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-test` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-test-junit5` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-testng` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-toml` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-typecheckers` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-xml` | `jar` | `-` | `4.0.24` |
-| `org.apache.groovy` | `groovy-yaml` | `jar` | `-` | `4.0.24` |
-| `org.apache.httpcomponents.client5` | `httpclient5` | `jar` | `-` | `5.2.3` |
-| `org.apache.httpcomponents.client5` | `httpclient5-cache` | `jar` | `-` | `5.2.3` |
-| `org.apache.httpcomponents.client5` | `httpclient5-fluent` | `jar` | `-` | `5.2.3` |
-| `org.apache.httpcomponents.client5` | `httpclient5-win` | `jar` | `-` | `5.2.3` |
-| `org.apache.httpcomponents.core5` | `httpcore5` | `jar` | `-` | `5.2.5` |
-| `org.apache.httpcomponents.core5` | `httpcore5-h2` | `jar` | `-` | `5.2.5` |
-| `org.apache.httpcomponents.core5` | `httpcore5-reactive` | `jar` | `-` | `5.2.5` |
-| `org.apache.httpcomponents` | `httpasyncclient` | `jar` | `-` | `4.1.5` |
-| `org.apache.httpcomponents` | `httpcore` | `jar` | `-` | `4.4.16` |
-| `org.apache.httpcomponents` | `httpcore-nio` | `jar` | `-` | `4.4.16` |
-| `org.apache.kafka` | `connect` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-api` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-basic-auth-extension` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-file` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-json` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-mirror` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-mirror-client` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-runtime` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `connect-transforms` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `generator` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-clients` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-clients` | `jar` | `test` | `3.6.2` |
-| `org.apache.kafka` | `kafka-log4j-appender` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-metadata` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-raft` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-server-common` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-server-common` | `jar` | `test` | `3.6.2` |
-| `org.apache.kafka` | `kafka-shell` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-storage` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-storage-api` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-streams` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-streams-scala_2.12` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-streams-scala_2.13` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-streams-test-utils` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka-tools` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka_2.12` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka_2.12` | `jar` | `test` | `3.6.2` |
-| `org.apache.kafka` | `kafka_2.13` | `jar` | `-` | `3.6.2` |
-| `org.apache.kafka` | `kafka_2.13` | `jar` | `test` | `3.6.2` |
-| `org.apache.kafka` | `trogdor` | `jar` | `-` | `3.6.2` |
-| `org.apache.logging.log4j` | `log4j-1.2-api` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-api` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-api-test` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-appserver` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-cassandra` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-core` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-core-test` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-couchdb` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-docker` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-flume-ng` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-iostreams` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-jakarta-smtp` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-jakarta-web` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-jcl` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-jmx-gui` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-jpa` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-jpl` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-jul` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-kubernetes` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-layout-template-json` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-mongodb3` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-mongodb4` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-slf4j-impl` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-slf4j2-impl` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-spring-boot` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-spring-cloud-config-client` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-taglib` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-to-jul` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-to-slf4j` | `jar` | `-` | `2.21.1` |
-| `org.apache.logging.log4j` | `log4j-web` | `jar` | `-` | `2.21.1` |
-| `org.apache.maven.plugin-tools` | `maven-plugin-annotations` | `jar` | `-` | `3.9.0` |
-| `org.apache.pulsar` | `bouncy-castle-bc` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `bouncy-castle-bcfips` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-1x` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-1x-base` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-2x-shaded` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-admin` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-admin-api` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-admin-original` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-all` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-api` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-auth-athenz` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-auth-sasl` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-messagecrypto-bc` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-original` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-reactive-adapter` | `jar` | `-` | `0.5.9` |
-| `org.apache.pulsar` | `pulsar-client-reactive-api` | `jar` | `-` | `0.5.9` |
-| `org.apache.pulsar` | `pulsar-client-reactive-jackson` | `jar` | `-` | `0.5.9` |
-| `org.apache.pulsar` | `pulsar-client-reactive-producer-cache-caffeine` | `jar` | `-` | `0.5.9` |
-| `org.apache.pulsar` | `pulsar-client-reactive-producer-cache-caffeine-shaded` | `jar` | `-` | `0.5.9` |
-| `org.apache.pulsar` | `pulsar-client-tools` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-client-tools-api` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-common` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-config-validation` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-functions-api` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-functions-proto` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-functions-utils` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-aerospike` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-alluxio` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-aws` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-batch-data-generator` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-batch-discovery-triggerers` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-canal` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-cassandra` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-common` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-core` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-data-generator` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-debezium` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-debezium-core` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-debezium-mongodb` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-debezium-mssql` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-debezium-mysql` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-debezium-oracle` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-debezium-postgres` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-dynamodb` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-elastic-search` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-file` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-flume` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-hbase` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-hdfs2` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-hdfs3` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-http` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-influxdb` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-jdbc` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-jdbc-clickhouse` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-jdbc-core` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-jdbc-mariadb` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-jdbc-openmldb` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-jdbc-postgres` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-jdbc-sqlite` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-kafka` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-kafka-connect-adaptor` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-kafka-connect-adaptor-nar` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-kinesis` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-mongo` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-netty` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-nsq` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-rabbitmq` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-redis` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-solr` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-io-twitter` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-metadata` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-presto-connector` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-presto-connector-original` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-sql` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-transaction-common` | `jar` | `-` | `3.1.3` |
-| `org.apache.pulsar` | `pulsar-websocket` | `jar` | `-` | `3.1.3` |
-| `org.apache.tomcat.embed` | `tomcat-embed-core` | `jar` | `-` | `10.1.33` |
-| `org.apache.tomcat.embed` | `tomcat-embed-el` | `jar` | `-` | `10.1.33` |
-| `org.apache.tomcat.embed` | `tomcat-embed-jasper` | `jar` | `-` | `10.1.33` |
-| `org.apache.tomcat.embed` | `tomcat-embed-websocket` | `jar` | `-` | `10.1.33` |
-| `org.apache.tomcat` | `tomcat-annotations-api` | `jar` | `-` | `10.1.33` |
-| `org.apache.tomcat` | `tomcat-jdbc` | `jar` | `-` | `10.1.33` |
-| `org.apache.tomcat` | `tomcat-jsp-api` | `jar` | `-` | `10.1.33` |
-| `org.aspectj` | `aspectjrt` | `jar` | `-` | `1.9.22.1` |
-| `org.aspectj` | `aspectjtools` | `jar` | `-` | `1.9.22.1` |
-| `org.aspectj` | `aspectjweaver` | `jar` | `-` | `1.9.22.1` |
-| `org.assertj` | `assertj-core` | `jar` | `-` | `3.27.7` |
-| `org.assertj` | `assertj-guava` | `jar` | `-` | `3.24.2` |
-| `org.awaitility` | `awaitility` | `jar` | `-` | `4.2.2` |
-| `org.awaitility` | `awaitility-groovy` | `jar` | `-` | `4.2.2` |
-| `org.awaitility` | `awaitility-kotlin` | `jar` | `-` | `4.2.2` |
-| `org.awaitility` | `awaitility-scala` | `jar` | `-` | `4.2.2` |
-| `org.cache2k` | `cache2k-api` | `jar` | `-` | `2.6.1.Final` |
-| `org.cache2k` | `cache2k-config` | `jar` | `-` | `2.6.1.Final` |
-| `org.cache2k` | `cache2k-core` | `jar` | `-` | `2.6.1.Final` |
-| `org.cache2k` | `cache2k-jcache` | `jar` | `-` | `2.6.1.Final` |
-| `org.cache2k` | `cache2k-micrometer` | `jar` | `-` | `2.6.1.Final` |
-| `org.cache2k` | `cache2k-spring` | `jar` | `-` | `2.6.1.Final` |
-| `org.codehaus.janino` | `commons-compiler` | `jar` | `-` | `3.1.12` |
-| `org.codehaus.janino` | `commons-compiler-jdk` | `jar` | `-` | `3.1.12` |
-| `org.codehaus.janino` | `janino` | `jar` | `-` | `3.1.12` |
-| `org.crac` | `crac` | `jar` | `-` | `1.4.0` |
-| `org.eclipse.angus` | `angus-activation` | `jar` | `-` | `2.0.2` |
-| `org.eclipse.angus` | `angus-core` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `angus-mail` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `dsn` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `gimap` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `imap` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `jakarta.mail` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `logging-mailhandler` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `pop3` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.angus` | `smtp` | `jar` | `-` | `2.0.3` |
-| `org.eclipse.jetty.demos` | `jetty-demo-handler` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.osgi` | `jetty-ee10-osgi-alpn` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.osgi` | `jetty-ee10-osgi-boot` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.osgi` | `jetty-ee10-osgi-boot-jsp` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-client-webapp` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-common` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jetty-client-webapp` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jetty-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-servlet` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-annotations` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-apache-jsp` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-cdi` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-fcgi-proxy` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-glassfish-jstl` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-jaspi` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-jndi` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-jspc-maven-plugin` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-maven-plugin` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-plus` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-proxy` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-quickstart` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-runner` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-servlet` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-servlets` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.ee10` | `jetty-ee10-webapp` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.fcgi` | `jetty-fcgi-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.fcgi` | `jetty-fcgi-proxy` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.fcgi` | `jetty-fcgi-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http2` | `jetty-http2-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http2` | `jetty-http2-client-transport` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http2` | `jetty-http2-common` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http2` | `jetty-http2-hpack` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http2` | `jetty-http2-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http3` | `jetty-http3-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http3` | `jetty-http3-client-transport` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http3` | `jetty-http3-common` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http3` | `jetty-http3-qpack` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.http3` | `jetty-http3-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.quic` | `jetty-quic-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.quic` | `jetty-quic-common` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.quic` | `jetty-quic-quiche-common` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.quic` | `jetty-quic-quiche-foreign` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.quic` | `jetty-quic-quiche-jna` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.quic` | `jetty-quic-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.websocket` | `jetty-websocket-core-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.websocket` | `jetty-websocket-core-common` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.websocket` | `jetty-websocket-core-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-api` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-common` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-alpn-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-alpn-conscrypt-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-alpn-conscrypt-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-alpn-java-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-alpn-java-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-alpn-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-client` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-deploy` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-http` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-http-spi` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-http-tools` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-io` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-jmx` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-jndi` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-keystore` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-openid` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-osgi` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-plus` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-proxy` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-reactive-httpclient` | `jar` | `-` | `4.0.8` |
-| `org.eclipse.jetty` | `jetty-rewrite` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-security` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-session` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-slf4j-impl` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-start` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-unixdomain-server` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-util` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-util-ajax` | `jar` | `-` | `12.0.15` |
-| `org.eclipse.jetty` | `jetty-xml` | `jar` | `-` | `12.0.15` |
-| `org.eclipse` | `yasson` | `jar` | `-` | `3.0.4` |
-| `org.ehcache` | `ehcache` | `jar` | `-` | `3.10.8` |
-| `org.ehcache` | `ehcache` | `jar` | `jakarta` | `3.10.8` |
-| `org.ehcache` | `ehcache-clustered` | `jar` | `-` | `3.10.8` |
-| `org.ehcache` | `ehcache-transactions` | `jar` | `-` | `3.10.8` |
-| `org.ehcache` | `ehcache-transactions` | `jar` | `jakarta` | `3.10.8` |
-| `org.elasticsearch.client` | `elasticsearch-rest-client` | `jar` | `-` | `8.10.4` |
-| `org.elasticsearch.client` | `elasticsearch-rest-client-sniffer` | `jar` | `-` | `8.10.4` |
-| `org.firebirdsql.jdbc` | `jaybird` | `jar` | `-` | `5.0.6.java11` |
-| `org.flywaydb` | `flyway-core` | `jar` | `-` | `9.22.3` |
-| `org.flywaydb` | `flyway-database-oracle` | `jar` | `-` | `9.22.3` |
-| `org.flywaydb` | `flyway-firebird` | `jar` | `-` | `9.22.3` |
-| `org.flywaydb` | `flyway-mysql` | `jar` | `-` | `9.22.3` |
-| `org.flywaydb` | `flyway-sqlserver` | `jar` | `-` | `9.22.3` |
-| `org.freemarker` | `freemarker` | `jar` | `-` | `2.3.33` |
-| `org.glassfish.jaxb` | `codemodel` | `jar` | `sources` | `4.0.5` |
-| `org.glassfish.jaxb` | `codemodel` | `jar` | `-` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-core` | `jar` | `sources` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-core` | `jar` | `-` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-jxc` | `jar` | `sources` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-jxc` | `jar` | `-` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-runtime` | `jar` | `sources` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-runtime` | `jar` | `-` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-xjc` | `jar` | `sources` | `4.0.5` |
-| `org.glassfish.jaxb` | `jaxb-xjc` | `jar` | `-` | `4.0.5` |
-| `org.glassfish.jaxb` | `txw2` | `jar` | `sources` | `4.0.5` |
-| `org.glassfish.jaxb` | `txw2` | `jar` | `-` | `4.0.5` |
-| `org.glassfish.jaxb` | `xsom` | `jar` | `sources` | `4.0.5` |
-| `org.glassfish.jaxb` | `xsom` | `jar` | `-` | `4.0.5` |
-| `org.glassfish.jersey.bundles` | `jaxrs-ri` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-apache-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-apache5-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-grizzly-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-helidon-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-jdk-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-jetty-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-jetty-http2-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-jetty11-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-jnh-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.connectors` | `jersey-netty-connector` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers.glassfish` | `jersey-gf-ejb` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-grizzly2-http` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-grizzly2-servlet` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-jdk-http` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-jetty-http` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-jetty-http2` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-jetty-servlet` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-jetty11-http` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-netty-http` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-servlet` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-servlet-core` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.containers` | `jersey-container-simple-http` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.core` | `jersey-client` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.core` | `jersey-common` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.core` | `jersey-server` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.cdi` | `jersey-cdi-rs-inject` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-ban-custom-hk2-binding` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-servlet` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-transaction` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-validation` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.cdi` | `jersey-weld2-se` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.microprofile` | `jersey-mp-config` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.microprofile` | `jersey-mp-rest-client` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.rx` | `jersey-rx-client-guava` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.rx` | `jersey-rx-client-rxjava` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext.rx` | `jersey-rx-client-rxjava2` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-bean-validation` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-declarative-linking` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-entity-filtering` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-metainf-services` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-micrometer` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-mvc` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-mvc-bean-validation` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-mvc-freemarker` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-mvc-jsp` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-mvc-mustache` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-proxy-client` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-spring6` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.ext` | `jersey-wadl-doclet` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.inject` | `jersey-cdi2-se` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.inject` | `jersey-hk2` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-jaxb` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-json-binding` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-json-gson` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-json-jackson` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-json-jettison` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-json-processing` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-kryo` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-moxy` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-multipart` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.media` | `jersey-media-sse` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.security` | `oauth1-client` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.security` | `oauth1-server` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.security` | `oauth1-signature` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.security` | `oauth2-client` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-bundle` | `pom` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-external` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-grizzly2` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-inmemory` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-jdk-http` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-jetty` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-jetty-http2` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-netty` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-simple` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework` | `jersey-test-framework-core` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.jersey.test-framework` | `jersey-test-framework-util` | `jar` | `-` | `3.1.9` |
-| `org.glassfish.web` | `jakarta.servlet.jsp.jstl` | `jar` | `-` | `3.0.1` |
-| `org.hamcrest` | `hamcrest` | `jar` | `-` | `2.2` |
-| `org.hamcrest` | `hamcrest-core` | `jar` | `-` | `2.2` |
-| `org.hamcrest` | `hamcrest-library` | `jar` | `-` | `2.2` |
-| `org.hibernate.orm` | `hibernate-agroal` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-ant` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-c3p0` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-community-dialects` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-core` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-envers` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-graalvm` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-hikaricp` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-jcache` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-jpamodelgen` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-micrometer` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-proxool` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-spatial` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-testing` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.orm` | `hibernate-vibur` | `jar` | `-` | `6.4.10.Final` |
-| `org.hibernate.validator` | `hibernate-validator` | `jar` | `-` | `8.0.1.Final` |
-| `org.hibernate.validator` | `hibernate-validator-annotation-processor` | `jar` | `-` | `8.0.1.Final` |
-| `org.hsqldb` | `hsqldb` | `jar` | `-` | `2.7.3` |
-| `org.infinispan.protostream` | `protostream` | `jar` | `-` | `4.6.5.Final` |
-| `org.infinispan.protostream` | `protostream-processor` | `jar` | `-` | `4.6.5.Final` |
-| `org.infinispan.protostream` | `protostream-types` | `jar` | `-` | `4.6.5.Final` |
-| `org.infinispan` | `infinispan-anchored-keys` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-api` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cachestore-jdbc` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cachestore-jdbc-common` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cachestore-jdbc-common-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cachestore-jdbc-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cachestore-remote` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cachestore-rocksdb` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cachestore-sql` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cdi-common` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cdi-common-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cdi-embedded` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cdi-embedded-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cdi-remote` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cdi-remote-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-checkstyle` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cli-client` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cli-client-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-client-hotrod` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-client-hotrod-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-client-rest` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-client-rest-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-cloudevents-integration` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-clustered-counter` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-clustered-lock` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-commons` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-commons-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-commons-test` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-component-annotations` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-component-processor` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-console` | `jar` | `-` | `14.0.15.Final` |
-| `org.infinispan` | `infinispan-core` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-core-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-extended-statistics` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-hibernate-cache-commons` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-hibernate-cache-spi` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-hibernate-cache-v60` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-hibernate-cache-v62` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-hotrod` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-hotrod-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-jboss-marshalling` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-jcache` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-jcache-commons` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-jcache-remote` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-key-value-store-client` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-logging-annotations` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-logging-processor` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-marshaller-kryo` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-marshaller-kryo-bundle` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-marshaller-protostuff` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-marshaller-protostuff-bundle` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-multimap` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-multimap-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-objectfilter` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-query` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-query-core` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-query-dsl` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-query-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-remote-query-client` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-remote-query-server` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-scripting` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-core` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-hotrod` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-hotrod-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-memcached` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-resp` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-rest` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-router` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-runtime` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-runtime` | `jar` | `loader` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-testdriver-core` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-testdriver-core-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-testdriver-junit4` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-server-testdriver-junit5` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring-boot-starter-embedded` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring-boot-starter-remote` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring-boot3-starter-embedded` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring-boot3-starter-remote` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring5-common` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring5-embedded` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring5-remote` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring6-common` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring6-embedded` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-spring6-remote` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-tasks` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-tasks-api` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-tools` | `jar` | `-` | `14.0.33.Final` |
-| `org.infinispan` | `infinispan-tools-jakarta` | `jar` | `-` | `14.0.33.Final` |
-| `org.influxdb` | `influxdb-java` | `jar` | `-` | `2.23` |
-| `org.jboss.logging` | `jboss-logging` | `jar` | `-` | `3.5.3.Final` |
-| `org.jdom` | `jdom2` | `jar` | `-` | `2.0.6.1` |
-| `org.jetbrains.kotlin` | `kotlin-compiler` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-compiler-embeddable` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-daemon-client` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-main-kts` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-osgi-bundle` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-reflect` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-script-runtime` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-scripting-common` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-scripting-ide-services` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-scripting-jvm` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-scripting-jvm-host` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-stdlib` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-stdlib-common` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-stdlib-jdk7` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-stdlib-jdk8` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-stdlib-js` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-test` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-test-annotations-common` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-test-common` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-test-js` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-test-junit` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-test-junit5` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlin` | `kotlin-test-testng` | `jar` | `-` | `1.9.25` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-android` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-core` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-core-jvm` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-debug` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-guava` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-javafx` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-jdk8` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-jdk9` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-play-services` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-reactive` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-reactor` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-rx2` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-rx3` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-slf4j` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-swing` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-test` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-coroutines-test-jvm` | `jar` | `-` | `1.7.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-cbor` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-cbor-jvm` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-core` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-core-jvm` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-hocon` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-json` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-json-jvm` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-json-okio` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-json-okio-jvm` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-properties` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-properties-jvm` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-protobuf` | `jar` | `-` | `1.6.3` |
-| `org.jetbrains.kotlinx` | `kotlinx-serialization-protobuf-jvm` | `jar` | `-` | `1.6.3` |
-| `org.jooq` | `jooq` | `jar` | `-` | `3.18.22` |
-| `org.jooq` | `jooq-codegen` | `jar` | `-` | `3.18.22` |
-| `org.jooq` | `jooq-kotlin` | `jar` | `-` | `3.18.22` |
-| `org.jooq` | `jooq-meta` | `jar` | `-` | `3.18.22` |
-| `org.junit.jupiter` | `junit-jupiter` | `jar` | `-` | `5.14.4` |
-| `org.junit.jupiter` | `junit-jupiter-api` | `jar` | `-` | `5.10.5` |
-| `org.junit.jupiter` | `junit-jupiter-engine` | `jar` | `-` | `5.10.5` |
-| `org.junit.jupiter` | `junit-jupiter-migrationsupport` | `jar` | `-` | `5.10.5` |
-| `org.junit.jupiter` | `junit-jupiter-params` | `jar` | `-` | `5.10.5` |
-| `org.junit.platform` | `junit-platform-commons` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-console` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-engine` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-jfr` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-launcher` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-reporting` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-runner` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-suite` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-suite-api` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-suite-commons` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-suite-engine` | `jar` | `-` | `1.10.5` |
-| `org.junit.platform` | `junit-platform-testkit` | `jar` | `-` | `1.10.5` |
-| `org.junit.vintage` | `junit-vintage-engine` | `jar` | `-` | `5.10.5` |
-| `org.jvnet.staxex` | `stax-ex` | `jar` | `sources` | `2.1.0` |
-| `org.jvnet.staxex` | `stax-ex` | `jar` | `-` | `2.1.0` |
-| `org.liquibase` | `liquibase-cdi` | `jar` | `-` | `4.24.0` |
-| `org.liquibase` | `liquibase-core` | `jar` | `-` | `4.24.0` |
-| `org.mariadb.jdbc` | `mariadb-java-client` | `jar` | `-` | `3.3.3` |
-| `org.mariadb` | `r2dbc-mariadb` | `jar` | `-` | `1.1.4` |
-| `org.messaginghub` | `pooled-jms` | `jar` | `-` | `3.1.7` |
-| `org.mockito` | `mockito-android` | `jar` | `-` | `5.7.0` |
-| `org.mockito` | `mockito-core` | `jar` | `-` | `5.11.0` |
-| `org.mockito` | `mockito-errorprone` | `jar` | `-` | `5.7.0` |
-| `org.mockito` | `mockito-junit-jupiter` | `jar` | `-` | `5.11.0` |
-| `org.mockito` | `mockito-proxy` | `jar` | `-` | `5.7.0` |
-| `org.mockito` | `mockito-subclass` | `jar` | `-` | `5.7.0` |
-| `org.mongodb` | `bson` | `jar` | `-` | `4.11.5` |
-| `org.mongodb` | `bson-record-codec` | `jar` | `-` | `4.11.5` |
-| `org.mongodb` | `mongodb-driver-core` | `jar` | `-` | `4.11.5` |
-| `org.mongodb` | `mongodb-driver-legacy` | `jar` | `-` | `4.11.5` |
-| `org.mongodb` | `mongodb-driver-reactivestreams` | `jar` | `-` | `4.11.5` |
-| `org.mongodb` | `mongodb-driver-sync` | `jar` | `-` | `4.11.5` |
-| `org.neo4j.driver` | `neo4j-java-driver` | `jar` | `-` | `5.25.0` |
-| `org.osgi` | `org.osgi.annotation.bundle` | `jar` | `-` | `2.0.0` |
-| `org.osgi` | `osgi.annotation` | `jar` | `-` | `8.1.0` |
-| `org.postgresql` | `postgresql` | `jar` | `-` | `42.6.2` |
-| `org.postgresql` | `r2dbc-postgresql` | `jar` | `-` | `1.0.7.RELEASE` |
-| `org.projectlombok` | `lombok` | `jar` | `-` | `1.18.48` |
-| `org.quartz-scheduler` | `quartz` | `jar` | `-` | `2.3.2` |
-| `org.quartz-scheduler` | `quartz-jobs` | `jar` | `-` | `2.3.2` |
-| `org.reactivestreams` | `reactive-streams` | `jar` | `-` | `1.0.4` |
-| `org.seleniumhq.selenium` | `htmlunit-driver` | `jar` | `-` | `4.13.0` |
-| `org.seleniumhq.selenium` | `selenium-api` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-chrome-driver` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-chromium-driver` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-devtools-v116` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-devtools-v117` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-devtools-v118` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-devtools-v85` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-edge-driver` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-firefox-driver` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-grid` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-http` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-ie-driver` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-java` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-json` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-manager` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-remote-driver` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-safari-driver` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-session-map-jdbc` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-session-map-redis` | `jar` | `-` | `4.14.1` |
-| `org.seleniumhq.selenium` | `selenium-support` | `jar` | `-` | `4.14.1` |
-| `org.skyscreamer` | `jsonassert` | `jar` | `-` | `1.5.3` |
-| `org.slf4j` | `jcl-over-slf4j` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `jul-to-slf4j` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `log4j-over-slf4j` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `slf4j-api` | `jar` | `-` | `2.0.19` |
-| `org.slf4j` | `slf4j-ext` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `slf4j-jdk-platform-logging` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `slf4j-jdk14` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `slf4j-log4j12` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `slf4j-nop` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `slf4j-reload4j` | `jar` | `-` | `2.0.16` |
-| `org.slf4j` | `slf4j-simple` | `jar` | `-` | `2.0.16` |
-| `org.springdoc` | `springdoc-openapi-starter-webmvc-ui` | `jar` | `-` | `2.3.0` |
-| `org.springframework.amqp` | `spring-amqp` | `jar` | `-` | `3.1.8` |
-| `org.springframework.amqp` | `spring-rabbit` | `jar` | `-` | `3.1.8` |
-| `org.springframework.amqp` | `spring-rabbit-junit` | `jar` | `-` | `3.1.8` |
-| `org.springframework.amqp` | `spring-rabbit-stream` | `jar` | `-` | `3.1.8` |
-| `org.springframework.amqp` | `spring-rabbit-test` | `jar` | `-` | `3.1.8` |
-| `org.springframework.batch` | `spring-batch-core` | `jar` | `-` | `5.1.2` |
-| `org.springframework.batch` | `spring-batch-infrastructure` | `jar` | `-` | `5.1.2` |
-| `org.springframework.batch` | `spring-batch-integration` | `jar` | `-` | `5.1.2` |
-| `org.springframework.batch` | `spring-batch-test` | `jar` | `-` | `5.1.2` |
-| `org.springframework.boot` | `spring-boot` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-actuator` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-actuator-autoconfigure` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-autoconfigure` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-autoconfigure-processor` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-buildpack-platform` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-configuration-metadata` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-configuration-processor` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-devtools` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-docker-compose` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-jarmode-layertools` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-loader` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-loader-classic` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-loader-tools` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-properties-migrator` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-activemq` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-actuator` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-amqp` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-aop` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-artemis` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-batch` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-cache` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-cassandra` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-cassandra-reactive` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-couchbase` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-couchbase-reactive` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-elasticsearch` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-jdbc` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-jpa` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-ldap` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-mongodb` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-mongodb-reactive` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-neo4j` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-r2dbc` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-redis` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-redis-reactive` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-data-rest` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-freemarker` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-graphql` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-groovy-templates` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-hateoas` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-integration` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-jdbc` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-jersey` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-jetty` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-jooq` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-json` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-log4j2` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-logging` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-mail` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-mustache` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-oauth2-authorization-server` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-oauth2-client` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-oauth2-resource-server` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-pulsar` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-pulsar-reactive` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-quartz` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-reactor-netty` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-rsocket` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-security` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-test` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-thymeleaf` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-tomcat` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-undertow` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-validation` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-web` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-web-services` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-webflux` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-starter-websocket` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-test` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-test-autoconfigure` | `jar` | `-` | `3.2.12` |
-| `org.springframework.boot` | `spring-boot-testcontainers` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-cassandra` | `jar` | `-` | `4.2.12` |
-| `org.springframework.data` | `spring-data-commons` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-couchbase` | `jar` | `-` | `5.2.12` |
-| `org.springframework.data` | `spring-data-elasticsearch` | `jar` | `-` | `5.2.12` |
-| `org.springframework.data` | `spring-data-envers` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-jdbc` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-jpa` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-keyvalue` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-ldap` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-mongodb` | `jar` | `-` | `4.2.12` |
-| `org.springframework.data` | `spring-data-neo4j` | `jar` | `-` | `7.2.12` |
-| `org.springframework.data` | `spring-data-r2dbc` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-redis` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-relational` | `jar` | `-` | `3.2.12` |
-| `org.springframework.data` | `spring-data-rest-core` | `jar` | `-` | `4.2.12` |
-| `org.springframework.data` | `spring-data-rest-hal-explorer` | `jar` | `-` | `4.2.12` |
-| `org.springframework.data` | `spring-data-rest-webmvc` | `jar` | `-` | `4.2.12` |
-| `org.springframework.graphql` | `spring-graphql` | `jar` | `-` | `1.2.9` |
-| `org.springframework.graphql` | `spring-graphql-test` | `jar` | `-` | `1.2.9` |
-| `org.springframework.hateoas` | `spring-hateoas` | `jar` | `-` | `2.2.5` |
-| `org.springframework.integration` | `spring-integration-amqp` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-camel` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-cassandra` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-core` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-debezium` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-event` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-feed` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-file` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-ftp` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-graphql` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-groovy` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-hazelcast` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-http` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-ip` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-jdbc` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-jms` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-jmx` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-jpa` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-kafka` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-mail` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-mongodb` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-mqtt` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-r2dbc` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-redis` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-rsocket` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-scripting` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-security` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-sftp` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-smb` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-stomp` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-stream` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-syslog` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-test` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-test-support` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-webflux` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-websocket` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-ws` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-xml` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-xmpp` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-zeromq` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-zip` | `jar` | `-` | `6.2.11` |
-| `org.springframework.integration` | `spring-integration-zookeeper` | `jar` | `-` | `6.2.11` |
-| `org.springframework.kafka` | `spring-kafka` | `jar` | `-` | `3.1.10` |
-| `org.springframework.kafka` | `spring-kafka-test` | `jar` | `-` | `3.1.10` |
-| `org.springframework.ldap` | `spring-ldap-core` | `jar` | `-` | `3.2.8` |
-| `org.springframework.ldap` | `spring-ldap-ldif-core` | `jar` | `-` | `3.2.8` |
-| `org.springframework.ldap` | `spring-ldap-odm` | `jar` | `-` | `3.2.8` |
-| `org.springframework.ldap` | `spring-ldap-test` | `jar` | `-` | `3.2.8` |
-| `org.springframework.pulsar` | `spring-pulsar` | `jar` | `-` | `1.0.12` |
-| `org.springframework.pulsar` | `spring-pulsar-cache-provider` | `jar` | `-` | `1.0.12` |
-| `org.springframework.pulsar` | `spring-pulsar-cache-provider-caffeine` | `jar` | `-` | `1.0.12` |
-| `org.springframework.pulsar` | `spring-pulsar-reactive` | `jar` | `-` | `1.0.12` |
-| `org.springframework.restdocs` | `spring-restdocs-asciidoctor` | `jar` | `-` | `3.0.3` |
-| `org.springframework.restdocs` | `spring-restdocs-core` | `jar` | `-` | `3.0.3` |
-| `org.springframework.restdocs` | `spring-restdocs-mockmvc` | `jar` | `-` | `3.0.3` |
-| `org.springframework.restdocs` | `spring-restdocs-restassured` | `jar` | `-` | `3.0.3` |
-| `org.springframework.restdocs` | `spring-restdocs-webtestclient` | `jar` | `-` | `3.0.3` |
-| `org.springframework.retry` | `spring-retry` | `jar` | `-` | `2.0.10` |
-| `org.springframework.security` | `spring-security-acl` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-aspects` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-cas` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-config` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-core` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-crypto` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-data` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-ldap` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-messaging` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-oauth2-authorization-server` | `jar` | `-` | `1.2.7` |
-| `org.springframework.security` | `spring-security-oauth2-client` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-oauth2-core` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-oauth2-jose` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-oauth2-resource-server` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-rsocket` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-saml2-service-provider` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-taglibs` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-test` | `jar` | `-` | `6.2.8` |
-| `org.springframework.security` | `spring-security-web` | `jar` | `-` | `6.2.8` |
-| `org.springframework.session` | `spring-session-core` | `jar` | `-` | `3.2.6` |
-| `org.springframework.session` | `spring-session-data-mongodb` | `jar` | `-` | `3.2.6` |
-| `org.springframework.session` | `spring-session-data-redis` | `jar` | `-` | `3.2.6` |
-| `org.springframework.session` | `spring-session-hazelcast` | `jar` | `-` | `3.2.6` |
-| `org.springframework.session` | `spring-session-jdbc` | `jar` | `-` | `3.2.6` |
-| `org.springframework.ws` | `spring-ws-core` | `jar` | `-` | `4.0.11` |
-| `org.springframework.ws` | `spring-ws-security` | `jar` | `-` | `4.0.11` |
-| `org.springframework.ws` | `spring-ws-support` | `jar` | `-` | `4.0.11` |
-| `org.springframework.ws` | `spring-ws-test` | `jar` | `-` | `4.0.11` |
-| `org.springframework.ws` | `spring-xml` | `jar` | `-` | `4.0.11` |
-| `org.springframework` | `spring-aop` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-aspects` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-beans` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-context` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-context-indexer` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-context-support` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-core` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-core-test` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-expression` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-instrument` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-jcl` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-jdbc` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-jms` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-messaging` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-orm` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-oxm` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-r2dbc` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-test` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-tx` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-web` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-webflux` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-webmvc` | `jar` | `-` | `6.1.15` |
-| `org.springframework` | `spring-websocket` | `jar` | `-` | `6.1.15` |
-| `org.testcontainers` | `activemq` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `azure` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `cassandra` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `chromadb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `clickhouse` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `cockroachdb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `consul` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `couchbase` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `cratedb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `database-commons` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `db2` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `dynalite` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `elasticsearch` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `gcloud` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `hivemq` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `influxdb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `jdbc` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `junit-jupiter` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `k3s` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `k6` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `kafka` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `localstack` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `mariadb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `milvus` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `minio` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `mockserver` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `mongodb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `mssqlserver` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `mysql` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `neo4j` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `nginx` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `oceanbase` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `ollama` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `openfga` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `oracle-free` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `oracle-xe` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `orientdb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `postgresql` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `presto` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `pulsar` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `qdrant` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `questdb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `r2dbc` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `rabbitmq` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `redpanda` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `selenium` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `solace` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `solr` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `spock` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `testcontainers` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `tidb` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `toxiproxy` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `trino` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `vault` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `weaviate` | `jar` | `-` | `1.19.8` |
-| `org.testcontainers` | `yugabytedb` | `jar` | `-` | `1.19.8` |
-| `org.thymeleaf.extras` | `thymeleaf-extras-springsecurity6` | `jar` | `-` | `3.1.2.RELEASE` |
-| `org.thymeleaf` | `thymeleaf` | `jar` | `-` | `3.1.2.RELEASE` |
-| `org.thymeleaf` | `thymeleaf-spring6` | `jar` | `-` | `3.1.2.RELEASE` |
-| `org.webjars` | `webjars-locator-core` | `jar` | `-` | `0.55` |
-| `org.xerial` | `sqlite-jdbc` | `jar` | `-` | `3.43.2.2` |
-| `org.xmlunit` | `xmlunit-assertj` | `jar` | `-` | `2.9.1` |
-| `org.xmlunit` | `xmlunit-assertj3` | `jar` | `-` | `2.9.1` |
-| `org.xmlunit` | `xmlunit-core` | `jar` | `-` | `2.9.1` |
-| `org.xmlunit` | `xmlunit-jakarta-jaxb-impl` | `jar` | `-` | `2.9.1` |
-| `org.xmlunit` | `xmlunit-legacy` | `jar` | `-` | `2.9.1` |
-| `org.xmlunit` | `xmlunit-matchers` | `jar` | `-` | `2.9.1` |
-| `org.xmlunit` | `xmlunit-placeholders` | `jar` | `-` | `2.9.1` |
-| `org.yaml` | `snakeyaml` | `jar` | `-` | `2.2` |
-| `redis.clients` | `jedis` | `jar` | `-` | `5.0.2` |
-| `wsdl4j` | `wsdl4j` | `jar` | `-` | `1.6.3` |
+| groupId | artifactId | type | classifier | version | known CVEs |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `biz.aQute.bnd` | `biz.aQute.bnd.annotation` | `jar` | `-` | `6.4.1` | - |
+| `ch.qos.logback` | `logback-access` | `jar` | `-` | `1.4.14` | - |
+| `ch.qos.logback` | `logback-classic` | `jar` | `-` | `1.4.14` | - |
+| `ch.qos.logback` | `logback-core` | `jar` | `-` | `1.4.14` | - |
+| `co.elastic.clients` | `elasticsearch-java` | `jar` | `-` | `8.10.4` | - |
+| `com.couchbase.client` | `java-client` | `jar` | `-` | `3.4.11` | - |
+| `com.datastax.oss` | `java-driver-core` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `java-driver-core-shaded` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `java-driver-mapper-processor` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `java-driver-mapper-runtime` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `java-driver-metrics-micrometer` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `java-driver-metrics-microprofile` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `java-driver-query-builder` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `java-driver-shaded-guava` | `jar` | `-` | `25.1-jre-graal-sub-1` | - |
+| `com.datastax.oss` | `java-driver-test-infra` | `jar` | `-` | `4.17.0` | - |
+| `com.datastax.oss` | `native-protocol` | `jar` | `-` | `1.5.1` | - |
+| `com.fasterxml.jackson.core` | `jackson-annotations` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.core` | `jackson-core` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.core` | `jackson-databind` | `jar` | `-` | `2.17.2` | `CVE-2026-54512` (high)<br>`CVE-2026-54513` (high)<br>`CVE-2026-54514` (medium)<br>`CVE-2026-54515` (medium) |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-avro` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-cbor` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-csv` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-ion` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-properties` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-protobuf` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-smile` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-toml` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-xml` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.dataformat` | `jackson-dataformat-yaml` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-eclipse-collections` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-guava` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate4` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate5` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate5-jakarta` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-hibernate6` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-hppc` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-jakarta-jsonp` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-jaxrs` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-jdk8` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-joda` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-joda-money` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-json-org` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-jsr310` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-jsr353` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.datatype` | `jackson-datatype-pcollections` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-base` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-cbor-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-json-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-smile-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-xml-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jakarta.rs` | `jackson-jakarta-rs-yaml-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-base` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-cbor-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-json-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-smile-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-xml-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jaxrs` | `jackson-jaxrs-yaml-provider` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jr` | `jackson-jr-all` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jr` | `jackson-jr-annotation-support` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jr` | `jackson-jr-objects` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jr` | `jackson-jr-retrofit2` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.jr` | `jackson-jr-stree` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-afterburner` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-blackbird` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-guice` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-jakarta-xmlbind-annotations` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-jaxb-annotations` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-jsonSchema` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-jsonSchema-jakarta` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-kotlin` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-mrbean` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-no-ctor-deser` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-osgi` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-parameter-names` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-paranamer` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-scala_2.11` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-scala_2.12` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-scala_2.13` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml.jackson.module` | `jackson-module-scala_3` | `jar` | `-` | `2.15.4` | - |
+| `com.fasterxml` | `classmate` | `jar` | `-` | `1.6.0` | - |
+| `com.github.ben-manes.caffeine` | `caffeine` | `jar` | `-` | `3.1.8` | - |
+| `com.github.ben-manes.caffeine` | `guava` | `jar` | `-` | `3.1.8` | - |
+| `com.github.ben-manes.caffeine` | `jcache` | `jar` | `-` | `3.1.8` | - |
+| `com.github.ben-manes.caffeine` | `simulator` | `jar` | `-` | `3.1.8` | - |
+| `com.github.mxab.thymeleaf.extras` | `thymeleaf-extras-data-attribute` | `jar` | `-` | `2.0.1` | - |
+| `com.github.spotbugs` | `spotbugs-annotations` | `jar` | `-` | `4.7.3` | - |
+| `com.google.code.gson` | `gson` | `jar` | `-` | `2.10.1` | - |
+| `com.google.guava` | `guava` | `jar` | `-` | `33.7.1-jre` | - |
+| `com.graphql-java` | `graphql-java` | `jar` | `-` | `21.5` | - |
+| `com.h2database` | `h2` | `jar` | `-` | `2.2.224` | - |
+| `com.hazelcast` | `hazelcast` | `jar` | `-` | `5.3.8` | - |
+| `com.hazelcast` | `hazelcast-spring` | `jar` | `-` | `5.3.8` | - |
+| `com.ibm.db2` | `jcc` | `jar` | `-` | `11.5.9.0` | - |
+| `com.jayway.jsonpath` | `json-path` | `jar` | `-` | `2.9.0` | - |
+| `com.jayway.jsonpath` | `json-path-assert` | `jar` | `-` | `2.9.0` | - |
+| `com.microsoft.sqlserver` | `mssql-jdbc` | `jar` | `-` | `12.4.2.jre11` | - |
+| `com.mysql` | `mysql-connector-j` | `jar` | `-` | `8.3.0` | - |
+| `com.oracle.database.ha` | `ons` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.ha` | `simplefan` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc11-debug` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc11-observability-debug` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc11_g` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc11dms_g` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc8-debug` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc8-observability-debug` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc8_g` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc.debug` | `ojdbc8dms_g` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc` | `ojdbc11` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc` | `ojdbc11-production` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc` | `ojdbc8` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc` | `ojdbc8-production` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc` | `rsi` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc` | `ucp` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.jdbc` | `ucp11` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.nls` | `orai18n` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.observability` | `dms` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.observability` | `ojdbc11-observability` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.observability` | `ojdbc11dms` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.observability` | `ojdbc8-observability` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.observability` | `ojdbc8dms` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.r2dbc` | `oracle-r2dbc` | `jar` | `-` | `1.1.1` | - |
+| `com.oracle.database.security` | `oraclepki` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.security` | `osdt_cert` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.security` | `osdt_core` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.xml` | `xdb` | `jar` | `-` | `21.9.0.0` | - |
+| `com.oracle.database.xml` | `xmlparserv2` | `jar` | `-` | `21.9.0.0` | - |
+| `com.querydsl` | `querydsl-apt` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-codegen` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-codegen-utils` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-collections` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-core` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-guava` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-hibernate-search` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-jdo` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-jpa` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-jpa-codegen` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-kotlin` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-kotlin-codegen` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-lucene3` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-lucene4` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-lucene5` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-mongodb` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-scala` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-spatial` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-sql` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-sql-codegen` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-sql-spatial` | `jar` | `-` | `5.0.0` | - |
+| `com.querydsl` | `querydsl-sql-spring` | `jar` | `-` | `5.0.0` | - |
+| `com.rabbitmq` | `amqp-client` | `jar` | `-` | `5.19.0` | - |
+| `com.rabbitmq` | `stream-client` | `jar` | `-` | `0.14.0` | - |
+| `com.samskivert` | `jmustache` | `jar` | `-` | `1.15` | - |
+| `com.sendgrid` | `sendgrid-java` | `jar` | `-` | `4.9.3` | - |
+| `com.squareup.okhttp3` | `logging-interceptor` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `mockwebserver` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `okcurl` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `okhttp` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `okhttp-brotli` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `okhttp-dnsoverhttps` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `okhttp-sse` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `okhttp-tls` | `jar` | `-` | `4.12.0` | - |
+| `com.squareup.okhttp3` | `okhttp-urlconnection` | `jar` | `-` | `4.12.0` | - |
+| `com.sun.istack` | `istack-commons-runtime` | `jar` | `-` | `4.1.2` | - |
+| `com.sun.xml.bind` | `jaxb-core` | `jar` | `sources` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-core` | `jar` | `-` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-impl` | `jar` | `sources` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-impl` | `jar` | `-` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-jxc` | `jar` | `sources` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-jxc` | `jar` | `-` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-osgi` | `jar` | `-` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-xjc` | `jar` | `sources` | `4.0.5` | - |
+| `com.sun.xml.bind` | `jaxb-xjc` | `jar` | `-` | `4.0.5` | - |
+| `com.sun.xml.fastinfoset` | `FastInfoset` | `jar` | `sources` | `2.1.1` | - |
+| `com.sun.xml.fastinfoset` | `FastInfoset` | `jar` | `-` | `2.1.1` | - |
+| `com.sun.xml.messaging.saaj` | `saaj-impl` | `jar` | `-` | `3.0.4` | - |
+| `com.unboundid` | `unboundid-ldapsdk` | `jar` | `-` | `6.0.11` | - |
+| `com.zaxxer` | `HikariCP` | `jar` | `-` | `5.0.1` | - |
+| `commons-codec` | `commons-codec` | `jar` | `-` | `1.16.1` | - |
+| `commons-pool` | `commons-pool` | `jar` | `-` | `1.6` | - |
+| `io.asyncer` | `r2dbc-mysql` | `jar` | `-` | `1.0.6` | - |
+| `io.dropwizard.metrics` | `metrics-annotation` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-caffeine` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-caffeine3` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-collectd` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-core` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-ehcache` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-graphite` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-healthchecks` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-httpasyncclient` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-httpclient` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-httpclient5` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jakarta-servlet` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jakarta-servlet6` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jakarta-servlets` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jcache` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jdbi` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jdbi3` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jersey2` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jersey3` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jersey31` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jetty10` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jetty11` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jetty12` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jetty12-ee10` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jetty9` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jmx` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-json` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-jvm` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-log4j2` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-logback` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-logback13` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-logback14` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-logback15` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-servlet` | `jar` | `-` | `4.2.28` | - |
+| `io.dropwizard.metrics` | `metrics-servlets` | `jar` | `-` | `4.2.28` | - |
+| `io.lettuce` | `lettuce-core` | `jar` | `-` | `6.3.2.RELEASE` | - |
+| `io.micrometer` | `docs` | `jar` | `-` | `1.2.12` | - |
+| `io.micrometer` | `micrometer-commons` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-core` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-jakarta9` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-jetty11` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-observation` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-observation-test` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-appoptics` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-atlas` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-azure-monitor` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-cloudwatch` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-cloudwatch2` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-datadog` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-dynatrace` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-elastic` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-ganglia` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-graphite` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-health` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-humio` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-influx` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-jmx` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-kairos` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-new-relic` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-opentsdb` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-otlp` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-prometheus` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-signalfx` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-stackdriver` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-statsd` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-registry-wavefront` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-test` | `jar` | `-` | `1.12.13` | - |
+| `io.micrometer` | `micrometer-tracing` | `jar` | `-` | `1.2.12` | - |
+| `io.micrometer` | `micrometer-tracing-bridge-brave` | `jar` | `-` | `1.2.12` | - |
+| `io.micrometer` | `micrometer-tracing-bridge-otel` | `jar` | `-` | `1.2.12` | - |
+| `io.micrometer` | `micrometer-tracing-integration-test` | `jar` | `-` | `1.2.12` | - |
+| `io.micrometer` | `micrometer-tracing-reporter-wavefront` | `jar` | `-` | `1.2.12` | - |
+| `io.micrometer` | `micrometer-tracing-test` | `jar` | `-` | `1.2.12` | - |
+| `io.netty` | `netty-all` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-buffer` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-dns` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-haproxy` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-http` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-http2` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-memcache` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-mqtt` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-redis` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-smtp` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-socks` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-stomp` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-codec-xml` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-common` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-dev-tools` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-example` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-handler` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-handler-proxy` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-handler-ssl-ocsp` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-resolver` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-resolver-dns` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-resolver-dns-classes-macos` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-resolver-dns-native-macos` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-resolver-dns-native-macos` | `jar` | `osx-x86_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-resolver-dns-native-macos` | `jar` | `osx-aarch_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-tcnative` | `jar` | `linux-x86_64` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative` | `jar` | `linux-x86_64-fedora` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative` | `jar` | `linux-aarch_64-fedora` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative` | `jar` | `osx-x86_64` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `-` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `linux-x86_64` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `linux-aarch_64` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `osx-x86_64` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `osx-aarch_64` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative-boringssl-static` | `jar` | `windows-x86_64` | `2.0.69.Final` | - |
+| `io.netty` | `netty-tcnative-classes` | `jar` | `-` | `2.0.69.Final` | - |
+| `io.netty` | `netty-transport` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-classes-epoll` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-classes-kqueue` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-epoll` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-epoll` | `jar` | `linux-aarch_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-epoll` | `jar` | `linux-riscv64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-epoll` | `jar` | `linux-x86_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-kqueue` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-kqueue` | `jar` | `osx-x86_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-kqueue` | `jar` | `osx-aarch_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-unix-common` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-unix-common` | `jar` | `linux-aarch_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-unix-common` | `jar` | `linux-riscv64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-unix-common` | `jar` | `linux-x86_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-unix-common` | `jar` | `osx-x86_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-native-unix-common` | `jar` | `osx-aarch_64` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-rxtx` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-sctp` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.netty` | `netty-transport-udt` | `jar` | `-` | `4.1.115.Final` | - |
+| `io.opentelemetry` | `opentelemetry-api` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-context` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-common` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-jaeger` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-jaeger-proto` | `jar` | `-` | `1.17.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-jaeger-thrift` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-logging` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-logging-otlp` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-otlp` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-otlp-common` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-sender-grpc-managed-channel` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-sender-okhttp` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-exporter-zipkin` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-extension-annotations` | `jar` | `-` | `1.18.0` | - |
+| `io.opentelemetry` | `opentelemetry-extension-aws` | `jar` | `-` | `1.20.1` | - |
+| `io.opentelemetry` | `opentelemetry-extension-kotlin` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-extension-trace-propagators` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-opentracing-shim` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-common` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-extension-autoconfigure` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-extension-autoconfigure-spi` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-extension-aws` | `jar` | `-` | `1.19.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-extension-jaeger-remote-sampler` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-extension-resources` | `jar` | `-` | `1.19.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-logs` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-metrics` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-testing` | `jar` | `-` | `1.31.0` | - |
+| `io.opentelemetry` | `opentelemetry-sdk-trace` | `jar` | `-` | `1.31.0` | - |
+| `io.projectreactor.addons` | `reactor-adapter` | `jar` | `-` | `3.5.2` | - |
+| `io.projectreactor.addons` | `reactor-extra` | `jar` | `-` | `3.5.2` | - |
+| `io.projectreactor.addons` | `reactor-pool` | `jar` | `-` | `1.0.8` | - |
+| `io.projectreactor.addons` | `reactor-pool-micrometer` | `jar` | `-` | `0.1.8` | - |
+| `io.projectreactor.kafka` | `reactor-kafka` | `jar` | `-` | `1.3.23` | - |
+| `io.projectreactor.kotlin` | `reactor-kotlin-extensions` | `jar` | `-` | `1.2.3` | - |
+| `io.projectreactor.netty` | `reactor-netty` | `jar` | `-` | `1.1.24` | - |
+| `io.projectreactor.netty` | `reactor-netty-core` | `jar` | `-` | `1.1.24` | - |
+| `io.projectreactor.netty` | `reactor-netty-http` | `jar` | `-` | `1.1.24` | - |
+| `io.projectreactor.netty` | `reactor-netty-http-brave` | `jar` | `-` | `1.1.24` | - |
+| `io.projectreactor` | `reactor-core` | `jar` | `-` | `3.6.12` | - |
+| `io.projectreactor` | `reactor-core-micrometer` | `jar` | `-` | `1.1.12` | - |
+| `io.projectreactor` | `reactor-test` | `jar` | `-` | `3.6.12` | - |
+| `io.projectreactor` | `reactor-tools` | `jar` | `-` | `3.6.12` | - |
+| `io.prometheus` | `simpleclient` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_caffeine` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_common` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_dropwizard` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_graphite_bridge` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_guava` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_hibernate` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_hotspot` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_httpserver` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_jetty` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_jetty_jdk8` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_log4j` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_log4j2` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_logback` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_pushgateway` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_servlet` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_servlet_jakarta` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_spring_boot` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_spring_web` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_tracer_common` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_tracer_otel` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_tracer_otel_agent` | `jar` | `-` | `0.16.0` | - |
+| `io.prometheus` | `simpleclient_vertx` | `jar` | `-` | `0.16.0` | - |
+| `io.r2dbc` | `r2dbc-h2` | `jar` | `-` | `1.0.0.RELEASE` | - |
+| `io.r2dbc` | `r2dbc-mssql` | `jar` | `-` | `1.0.2.RELEASE` | - |
+| `io.r2dbc` | `r2dbc-pool` | `jar` | `-` | `1.0.2.RELEASE` | - |
+| `io.r2dbc` | `r2dbc-proxy` | `jar` | `-` | `1.1.5.RELEASE` | - |
+| `io.r2dbc` | `r2dbc-spi` | `jar` | `-` | `1.0.0.RELEASE` | - |
+| `io.reactivex.rxjava3` | `rxjava` | `jar` | `-` | `3.1.9` | - |
+| `io.rest-assured` | `json-path` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `json-schema-validator` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `kotlin-extensions` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `rest-assured` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `rest-assured-all` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `rest-assured-common` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `scala-support` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `spring-commons` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `spring-mock-mvc` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `spring-mock-mvc-kotlin-extensions` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `spring-web-test-client` | `jar` | `-` | `5.3.2` | - |
+| `io.rest-assured` | `xml-path` | `jar` | `-` | `5.3.2` | - |
+| `io.rsocket` | `rsocket-core` | `jar` | `-` | `1.1.3` | - |
+| `io.rsocket` | `rsocket-load-balancer` | `jar` | `-` | `1.1.3` | - |
+| `io.rsocket` | `rsocket-micrometer` | `jar` | `-` | `1.1.3` | - |
+| `io.rsocket` | `rsocket-test` | `jar` | `-` | `1.1.3` | - |
+| `io.rsocket` | `rsocket-transport-local` | `jar` | `-` | `1.1.3` | - |
+| `io.rsocket` | `rsocket-transport-netty` | `jar` | `-` | `1.1.3` | - |
+| `io.spring.gradle` | `dependency-management-plugin` | `jar` | `-` | `1.1.6` | - |
+| `io.undertow` | `undertow-core` | `jar` | `-` | `2.3.17.Final` | - |
+| `io.undertow` | `undertow-servlet` | `jar` | `-` | `2.3.17.Final` | - |
+| `io.undertow` | `undertow-websockets-jsr` | `jar` | `-` | `2.3.17.Final` | - |
+| `io.zipkin.brave` | `brave` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-context-jfr` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-context-log4j12` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-context-log4j2` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-context-rxjava2` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-context-slf4j` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-dubbo` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-dubbo-rpc` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-grpc` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-http` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-http-tests` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-httpasyncclient` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-httpclient` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-jaxrs2` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-jersey-server` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-jms` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-jms-jakarta` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-kafka-clients` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-kafka-streams` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-messaging` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-mongodb` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-mysql` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-mysql6` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-mysql8` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-netty-codec-http` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-okhttp3` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-p6spy` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-rpc` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-servlet` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-servlet-jakarta` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-sparkjava` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-spring-rabbit` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-spring-web` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-spring-webmvc` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-instrumentation-vertx-web` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-spring-beans` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.brave` | `brave-tests` | `jar` | `-` | `5.16.0` | - |
+| `io.zipkin.proto3` | `zipkin-proto3` | `jar` | `-` | `1.0.0` | - |
+| `io.zipkin.reporter2` | `zipkin-reporter` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-reporter-brave` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-reporter-metrics-micrometer` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-reporter-spring-beans` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-sender-activemq-client` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-sender-amqp-client` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-sender-kafka` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-sender-kafka08` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-sender-libthrift` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-sender-okhttp3` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.reporter2` | `zipkin-sender-urlconnection` | `jar` | `-` | `2.16.3` | - |
+| `io.zipkin.zipkin2` | `zipkin` | `jar` | `-` | `2.23.2` | - |
+| `jakarta.activation` | `jakarta.activation-api` | `jar` | `-` | `2.1.3` | - |
+| `jakarta.annotation` | `jakarta.annotation-api` | `jar` | `-` | `2.1.1` | - |
+| `jakarta.jms` | `jakarta.jms-api` | `jar` | `-` | `3.1.0` | - |
+| `jakarta.json.bind` | `jakarta.json.bind-api` | `jar` | `-` | `3.0.1` | - |
+| `jakarta.json` | `jakarta.json-api` | `jar` | `-` | `2.1.3` | - |
+| `jakarta.mail` | `jakarta.mail-api` | `jar` | `-` | `2.1.3` | - |
+| `jakarta.management.j2ee` | `jakarta.management.j2ee-api` | `jar` | `-` | `1.1.4` | - |
+| `jakarta.persistence` | `jakarta.persistence-api` | `jar` | `-` | `3.1.0` | - |
+| `jakarta.servlet.jsp.jstl` | `jakarta.servlet.jsp.jstl-api` | `jar` | `-` | `3.0.2` | - |
+| `jakarta.servlet` | `jakarta.servlet-api` | `jar` | `-` | `6.0.0` | - |
+| `jakarta.transaction` | `jakarta.transaction-api` | `jar` | `-` | `2.0.1` | - |
+| `jakarta.validation` | `jakarta.validation-api` | `jar` | `-` | `3.0.2` | - |
+| `jakarta.websocket` | `jakarta.websocket-api` | `jar` | `-` | `2.1.1` | - |
+| `jakarta.websocket` | `jakarta.websocket-client-api` | `jar` | `-` | `2.1.1` | - |
+| `jakarta.ws.rs` | `jakarta.ws.rs-api` | `jar` | `-` | `3.1.0` | - |
+| `jakarta.xml.bind` | `jakarta.xml.bind-api` | `jar` | `-` | `4.0.2` | - |
+| `jakarta.xml.bind` | `jakarta.xml.bind-api` | `jar` | `sources` | `4.0.2` | - |
+| `jakarta.xml.soap` | `jakarta.xml.soap-api` | `jar` | `-` | `3.0.2` | - |
+| `jakarta.xml.ws` | `jakarta.xml.ws-api` | `jar` | `-` | `4.0.2` | - |
+| `javax.cache` | `cache-api` | `jar` | `-` | `1.1.1` | - |
+| `javax.money` | `money-api` | `jar` | `-` | `1.1` | - |
+| `jaxen` | `jaxen` | `jar` | `-` | `2.0.0` | - |
+| `junit` | `junit` | `jar` | `-` | `4.13.2` | - |
+| `net.bytebuddy` | `byte-buddy` | `jar` | `-` | `1.14.19` | - |
+| `net.bytebuddy` | `byte-buddy-agent` | `jar` | `-` | `1.14.19` | - |
+| `net.minidev` | `json-smart` | `jar` | `-` | `2.5.1` | - |
+| `net.sourceforge.htmlunit` | `htmlunit` | `jar` | `-` | `2.70.0` | - |
+| `net.sourceforge.jtds` | `jtds` | `jar` | `-` | `1.3.1` | - |
+| `net.sourceforge.nekohtml` | `nekohtml` | `jar` | `-` | `1.9.22` | - |
+| `nz.net.ultraq.thymeleaf` | `thymeleaf-layout-dialect` | `jar` | `-` | `3.3.0` | - |
+| `org.apache.activemq` | `activemq-amqp` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-blueprint` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-broker` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-client` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-client-jakarta` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-console` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-http` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-jaas` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-jdbc-store` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-jms-pool` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-kahadb-store` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-karaf` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-log4j-appender` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-mqtt` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-openwire-generator` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-openwire-legacy` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-osgi` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-partition` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-pool` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-ra` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-run` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-runtime-config` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-shiro` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-spring` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-stomp` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `activemq-web` | `jar` | `-` | `5.18.6` | - |
+| `org.apache.activemq` | `artemis-amqp-protocol` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-commons` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-core-client` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-jakarta-client` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-jakarta-server` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-jakarta-service-extensions` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-jdbc-store` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-journal` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-quorum-api` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-selector` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-server` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.activemq` | `artemis-service-extensions` | `jar` | `-` | `2.31.2` | - |
+| `org.apache.commons` | `commons-dbcp2` | `jar` | `-` | `2.10.0` | - |
+| `org.apache.commons` | `commons-lang3` | `jar` | `-` | `3.20.0` | - |
+| `org.apache.commons` | `commons-pool2` | `jar` | `-` | `2.12.0` | - |
+| `org.apache.derby` | `derby` | `jar` | `-` | `10.16.1.1` | - |
+| `org.apache.derby` | `derbyclient` | `jar` | `-` | `10.16.1.1` | - |
+| `org.apache.derby` | `derbynet` | `jar` | `-` | `10.16.1.1` | - |
+| `org.apache.derby` | `derbyoptionaltools` | `jar` | `-` | `10.16.1.1` | - |
+| `org.apache.derby` | `derbyshared` | `jar` | `-` | `10.16.1.1` | - |
+| `org.apache.derby` | `derbytools` | `jar` | `-` | `10.16.1.1` | - |
+| `org.apache.groovy` | `groovy` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-ant` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-astbuilder` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-cli-commons` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-cli-picocli` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-console` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-contracts` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-datetime` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-dateutil` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-docgenerator` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-ginq` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-groovydoc` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-groovysh` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-jmx` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-json` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-jsr223` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-macro` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-macro-library` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-nio` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-servlet` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-sql` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-swing` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-templates` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-test` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-test-junit5` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-testng` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-toml` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-typecheckers` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-xml` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.groovy` | `groovy-yaml` | `jar` | `-` | `4.0.24` | - |
+| `org.apache.httpcomponents.client5` | `httpclient5` | `jar` | `-` | `5.2.3` | - |
+| `org.apache.httpcomponents.client5` | `httpclient5-cache` | `jar` | `-` | `5.2.3` | - |
+| `org.apache.httpcomponents.client5` | `httpclient5-fluent` | `jar` | `-` | `5.2.3` | - |
+| `org.apache.httpcomponents.client5` | `httpclient5-win` | `jar` | `-` | `5.2.3` | - |
+| `org.apache.httpcomponents.core5` | `httpcore5` | `jar` | `-` | `5.2.5` | - |
+| `org.apache.httpcomponents.core5` | `httpcore5-h2` | `jar` | `-` | `5.2.5` | - |
+| `org.apache.httpcomponents.core5` | `httpcore5-reactive` | `jar` | `-` | `5.2.5` | - |
+| `org.apache.httpcomponents` | `httpasyncclient` | `jar` | `-` | `4.1.5` | - |
+| `org.apache.httpcomponents` | `httpcore` | `jar` | `-` | `4.4.16` | - |
+| `org.apache.httpcomponents` | `httpcore-nio` | `jar` | `-` | `4.4.16` | - |
+| `org.apache.kafka` | `connect` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-api` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-basic-auth-extension` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-file` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-json` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-mirror` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-mirror-client` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-runtime` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `connect-transforms` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `generator` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-clients` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-clients` | `jar` | `test` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-log4j-appender` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-metadata` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-raft` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-server-common` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-server-common` | `jar` | `test` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-shell` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-storage` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-storage-api` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-streams` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-streams-scala_2.12` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-streams-scala_2.13` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-streams-test-utils` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka-tools` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka_2.12` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka_2.12` | `jar` | `test` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka_2.13` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.kafka` | `kafka_2.13` | `jar` | `test` | `3.6.2` | - |
+| `org.apache.kafka` | `trogdor` | `jar` | `-` | `3.6.2` | - |
+| `org.apache.logging.log4j` | `log4j-1.2-api` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-api` | `jar` | `-` | `2.21.1` | `CVE-2026-34479` (medium)<br>`CVE-2026-34477` (medium)<br>`CVE-2026-49844` (medium) |
+| `org.apache.logging.log4j` | `log4j-api-test` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-appserver` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-cassandra` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-core` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-core-test` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-couchdb` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-docker` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-flume-ng` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-iostreams` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-jakarta-smtp` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-jakarta-web` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-jcl` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-jmx-gui` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-jpa` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-jpl` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-jul` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-kubernetes` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-layout-template-json` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-mongodb3` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-mongodb4` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-slf4j-impl` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-slf4j2-impl` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-spring-boot` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-spring-cloud-config-client` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-taglib` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-to-jul` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-to-slf4j` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.logging.log4j` | `log4j-web` | `jar` | `-` | `2.21.1` | - |
+| `org.apache.maven.plugin-tools` | `maven-plugin-annotations` | `jar` | `-` | `3.9.0` | - |
+| `org.apache.pulsar` | `bouncy-castle-bc` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `bouncy-castle-bcfips` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-1x` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-1x-base` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-2x-shaded` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-admin` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-admin-api` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-admin-original` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-all` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-api` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-auth-athenz` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-auth-sasl` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-messagecrypto-bc` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-original` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-reactive-adapter` | `jar` | `-` | `0.5.9` | - |
+| `org.apache.pulsar` | `pulsar-client-reactive-api` | `jar` | `-` | `0.5.9` | - |
+| `org.apache.pulsar` | `pulsar-client-reactive-jackson` | `jar` | `-` | `0.5.9` | - |
+| `org.apache.pulsar` | `pulsar-client-reactive-producer-cache-caffeine` | `jar` | `-` | `0.5.9` | - |
+| `org.apache.pulsar` | `pulsar-client-reactive-producer-cache-caffeine-shaded` | `jar` | `-` | `0.5.9` | - |
+| `org.apache.pulsar` | `pulsar-client-tools` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-client-tools-api` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-common` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-config-validation` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-functions-api` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-functions-proto` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-functions-utils` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-aerospike` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-alluxio` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-aws` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-batch-data-generator` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-batch-discovery-triggerers` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-canal` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-cassandra` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-common` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-core` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-data-generator` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-debezium` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-debezium-core` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-debezium-mongodb` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-debezium-mssql` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-debezium-mysql` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-debezium-oracle` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-debezium-postgres` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-dynamodb` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-elastic-search` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-file` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-flume` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-hbase` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-hdfs2` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-hdfs3` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-http` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-influxdb` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-jdbc` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-jdbc-clickhouse` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-jdbc-core` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-jdbc-mariadb` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-jdbc-openmldb` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-jdbc-postgres` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-jdbc-sqlite` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-kafka` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-kafka-connect-adaptor` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-kafka-connect-adaptor-nar` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-kinesis` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-mongo` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-netty` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-nsq` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-rabbitmq` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-redis` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-solr` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-io-twitter` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-metadata` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-presto-connector` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-presto-connector-original` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-sql` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-transaction-common` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.pulsar` | `pulsar-websocket` | `jar` | `-` | `3.1.3` | - |
+| `org.apache.tomcat.embed` | `tomcat-embed-core` | `jar` | `-` | `10.1.33` | `CVE-2024-50379` (critical)<br>`CVE-2024-56337` (critical)<br>`CVE-2025-24813` (critical)<br>`CVE-2025-31651` (critical)<br>`CVE-2026-41293` (critical)<br>`CVE-2026-43512` (critical)<br>`CVE-2026-65905` (critical)<br>`CVE-2025-55754` (critical)<br>`CVE-2025-66614` (critical)<br>`CVE-2026-29145` (critical)<br>`CVE-2026-43515` (critical)<br>`CVE-2026-53434` (critical)<br>`CVE-2026-55276` (critical)<br>`CVE-2026-59083` (critical)<br>`CVE-2026-59084` (critical)<br>`CVE-2026-65182` (critical)<br>`CVE-2026-68525` (critical)<br>`CVE-2025-49124` (high)<br>`CVE-2026-65183` (high)<br>`CVE-2026-66422` (high)<br>`CVE-2026-68569` (high)<br>`CVE-2025-31650` (high)<br>`CVE-2025-48988` (high)<br>`CVE-2025-48989` (high)<br>`CVE-2025-49125` (high)<br>`CVE-2025-52520` (high)<br>`CVE-2025-53506` (high)<br>`CVE-2025-55752` (high)<br>`CVE-2026-24734` (high)<br>`CVE-2026-24880` (high)<br>`CVE-2026-29146` (high)<br>`CVE-2026-34483` (high)<br>`CVE-2026-34487` (high)<br>`CVE-2026-41284` (high)<br>`CVE-2026-43513` (high)<br>`CVE-2026-65927` (high)<br>`CVE-2026-68763` (high)<br>`CVE-2025-46701` (high)<br>`CVE-2026-42498` (high)<br>`CVE-2026-53404` (high)<br>`CVE-2026-55957` (high)<br>`CVE-2026-73180` (medium)<br>`CVE-2025-55668` (medium)<br>`CVE-2026-34500` (medium)<br>`CVE-2026-55955` (medium)<br>`CVE-2026-55956` (medium)<br>`CVE-2026-25854` (medium)<br>`CVE-2026-50229` (medium)<br>`CVE-2024-54677` (medium)<br>`CVE-2025-61795` (medium)<br>`CVE-2026-66299` (medium)<br>`CVE-2026-24733` (low)<br>`CVE-2026-43514` (low) |
+| `org.apache.tomcat.embed` | `tomcat-embed-el` | `jar` | `-` | `10.1.33` | - |
+| `org.apache.tomcat.embed` | `tomcat-embed-jasper` | `jar` | `-` | `10.1.33` | - |
+| `org.apache.tomcat.embed` | `tomcat-embed-websocket` | `jar` | `-` | `10.1.33` | - |
+| `org.apache.tomcat` | `tomcat-annotations-api` | `jar` | `-` | `10.1.33` | - |
+| `org.apache.tomcat` | `tomcat-jdbc` | `jar` | `-` | `10.1.33` | - |
+| `org.apache.tomcat` | `tomcat-jsp-api` | `jar` | `-` | `10.1.33` | - |
+| `org.aspectj` | `aspectjrt` | `jar` | `-` | `1.9.22.1` | - |
+| `org.aspectj` | `aspectjtools` | `jar` | `-` | `1.9.22.1` | - |
+| `org.aspectj` | `aspectjweaver` | `jar` | `-` | `1.9.22.1` | - |
+| `org.assertj` | `assertj-core` | `jar` | `-` | `3.27.7` | - |
+| `org.assertj` | `assertj-guava` | `jar` | `-` | `3.24.2` | - |
+| `org.awaitility` | `awaitility` | `jar` | `-` | `4.2.2` | - |
+| `org.awaitility` | `awaitility-groovy` | `jar` | `-` | `4.2.2` | - |
+| `org.awaitility` | `awaitility-kotlin` | `jar` | `-` | `4.2.2` | - |
+| `org.awaitility` | `awaitility-scala` | `jar` | `-` | `4.2.2` | - |
+| `org.cache2k` | `cache2k-api` | `jar` | `-` | `2.6.1.Final` | - |
+| `org.cache2k` | `cache2k-config` | `jar` | `-` | `2.6.1.Final` | - |
+| `org.cache2k` | `cache2k-core` | `jar` | `-` | `2.6.1.Final` | - |
+| `org.cache2k` | `cache2k-jcache` | `jar` | `-` | `2.6.1.Final` | - |
+| `org.cache2k` | `cache2k-micrometer` | `jar` | `-` | `2.6.1.Final` | - |
+| `org.cache2k` | `cache2k-spring` | `jar` | `-` | `2.6.1.Final` | - |
+| `org.codehaus.janino` | `commons-compiler` | `jar` | `-` | `3.1.12` | - |
+| `org.codehaus.janino` | `commons-compiler-jdk` | `jar` | `-` | `3.1.12` | - |
+| `org.codehaus.janino` | `janino` | `jar` | `-` | `3.1.12` | - |
+| `org.crac` | `crac` | `jar` | `-` | `1.4.0` | - |
+| `org.eclipse.angus` | `angus-activation` | `jar` | `-` | `2.0.2` | - |
+| `org.eclipse.angus` | `angus-core` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `angus-mail` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `dsn` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `gimap` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `imap` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `jakarta.mail` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `logging-mailhandler` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `pop3` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.angus` | `smtp` | `jar` | `-` | `2.0.3` | - |
+| `org.eclipse.jetty.demos` | `jetty-demo-handler` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.osgi` | `jetty-ee10-osgi-alpn` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.osgi` | `jetty-ee10-osgi-boot` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.osgi` | `jetty-ee10-osgi-boot-jsp` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-client-webapp` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-common` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jakarta-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jetty-client-webapp` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-jetty-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10.websocket` | `jetty-ee10-websocket-servlet` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-annotations` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-apache-jsp` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-cdi` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-fcgi-proxy` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-glassfish-jstl` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-jaspi` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-jndi` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-jspc-maven-plugin` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-maven-plugin` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-plus` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-proxy` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-quickstart` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-runner` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-servlet` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-servlets` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.ee10` | `jetty-ee10-webapp` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.fcgi` | `jetty-fcgi-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.fcgi` | `jetty-fcgi-proxy` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.fcgi` | `jetty-fcgi-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http2` | `jetty-http2-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http2` | `jetty-http2-client-transport` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http2` | `jetty-http2-common` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http2` | `jetty-http2-hpack` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http2` | `jetty-http2-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http3` | `jetty-http3-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http3` | `jetty-http3-client-transport` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http3` | `jetty-http3-common` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http3` | `jetty-http3-qpack` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.http3` | `jetty-http3-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.quic` | `jetty-quic-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.quic` | `jetty-quic-common` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.quic` | `jetty-quic-quiche-common` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.quic` | `jetty-quic-quiche-foreign` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.quic` | `jetty-quic-quiche-jna` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.quic` | `jetty-quic-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.websocket` | `jetty-websocket-core-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.websocket` | `jetty-websocket-core-common` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.websocket` | `jetty-websocket-core-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-api` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-common` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty.websocket` | `jetty-websocket-jetty-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-alpn-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-alpn-conscrypt-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-alpn-conscrypt-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-alpn-java-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-alpn-java-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-alpn-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-client` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-deploy` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-http` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-http-spi` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-http-tools` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-io` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-jmx` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-jndi` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-keystore` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-openid` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-osgi` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-plus` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-proxy` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-reactive-httpclient` | `jar` | `-` | `4.0.8` | - |
+| `org.eclipse.jetty` | `jetty-rewrite` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-security` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-session` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-slf4j-impl` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-start` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-unixdomain-server` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-util` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-util-ajax` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse.jetty` | `jetty-xml` | `jar` | `-` | `12.0.15` | - |
+| `org.eclipse` | `yasson` | `jar` | `-` | `3.0.4` | - |
+| `org.ehcache` | `ehcache` | `jar` | `-` | `3.10.8` | - |
+| `org.ehcache` | `ehcache` | `jar` | `jakarta` | `3.10.8` | - |
+| `org.ehcache` | `ehcache-clustered` | `jar` | `-` | `3.10.8` | - |
+| `org.ehcache` | `ehcache-transactions` | `jar` | `-` | `3.10.8` | - |
+| `org.ehcache` | `ehcache-transactions` | `jar` | `jakarta` | `3.10.8` | - |
+| `org.elasticsearch.client` | `elasticsearch-rest-client` | `jar` | `-` | `8.10.4` | - |
+| `org.elasticsearch.client` | `elasticsearch-rest-client-sniffer` | `jar` | `-` | `8.10.4` | - |
+| `org.firebirdsql.jdbc` | `jaybird` | `jar` | `-` | `5.0.6.java11` | - |
+| `org.flywaydb` | `flyway-core` | `jar` | `-` | `9.22.3` | - |
+| `org.flywaydb` | `flyway-database-oracle` | `jar` | `-` | `9.22.3` | - |
+| `org.flywaydb` | `flyway-firebird` | `jar` | `-` | `9.22.3` | - |
+| `org.flywaydb` | `flyway-mysql` | `jar` | `-` | `9.22.3` | - |
+| `org.flywaydb` | `flyway-sqlserver` | `jar` | `-` | `9.22.3` | - |
+| `org.freemarker` | `freemarker` | `jar` | `-` | `2.3.33` | - |
+| `org.glassfish.jaxb` | `codemodel` | `jar` | `sources` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `codemodel` | `jar` | `-` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-core` | `jar` | `sources` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-core` | `jar` | `-` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-jxc` | `jar` | `sources` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-jxc` | `jar` | `-` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-runtime` | `jar` | `sources` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-runtime` | `jar` | `-` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-xjc` | `jar` | `sources` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `jaxb-xjc` | `jar` | `-` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `txw2` | `jar` | `sources` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `txw2` | `jar` | `-` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `xsom` | `jar` | `sources` | `4.0.5` | - |
+| `org.glassfish.jaxb` | `xsom` | `jar` | `-` | `4.0.5` | - |
+| `org.glassfish.jersey.bundles` | `jaxrs-ri` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-apache-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-apache5-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-grizzly-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-helidon-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-jdk-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-jetty-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-jetty-http2-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-jetty11-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-jnh-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.connectors` | `jersey-netty-connector` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers.glassfish` | `jersey-gf-ejb` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-grizzly2-http` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-grizzly2-servlet` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-jdk-http` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-jetty-http` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-jetty-http2` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-jetty-servlet` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-jetty11-http` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-netty-http` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-servlet` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-servlet-core` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.containers` | `jersey-container-simple-http` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.core` | `jersey-client` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.core` | `jersey-common` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.core` | `jersey-server` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.cdi` | `jersey-cdi-rs-inject` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-ban-custom-hk2-binding` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-servlet` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-transaction` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.cdi` | `jersey-cdi1x-validation` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.cdi` | `jersey-weld2-se` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.microprofile` | `jersey-mp-config` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.microprofile` | `jersey-mp-rest-client` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.rx` | `jersey-rx-client-guava` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.rx` | `jersey-rx-client-rxjava` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext.rx` | `jersey-rx-client-rxjava2` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-bean-validation` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-declarative-linking` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-entity-filtering` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-metainf-services` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-micrometer` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-mvc` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-mvc-bean-validation` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-mvc-freemarker` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-mvc-jsp` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-mvc-mustache` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-proxy-client` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-spring6` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.ext` | `jersey-wadl-doclet` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.inject` | `jersey-cdi2-se` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.inject` | `jersey-hk2` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-jaxb` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-json-binding` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-json-gson` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-json-jackson` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-json-jettison` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-json-processing` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-kryo` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-moxy` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-multipart` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.media` | `jersey-media-sse` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.security` | `oauth1-client` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.security` | `oauth1-server` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.security` | `oauth1-signature` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.security` | `oauth2-client` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-bundle` | `pom` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-external` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-grizzly2` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-inmemory` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-jdk-http` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-jetty` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-jetty-http2` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-netty` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework.providers` | `jersey-test-framework-provider-simple` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework` | `jersey-test-framework-core` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.jersey.test-framework` | `jersey-test-framework-util` | `jar` | `-` | `3.1.9` | - |
+| `org.glassfish.web` | `jakarta.servlet.jsp.jstl` | `jar` | `-` | `3.0.1` | - |
+| `org.hamcrest` | `hamcrest` | `jar` | `-` | `2.2` | - |
+| `org.hamcrest` | `hamcrest-core` | `jar` | `-` | `2.2` | - |
+| `org.hamcrest` | `hamcrest-library` | `jar` | `-` | `2.2` | - |
+| `org.hibernate.orm` | `hibernate-agroal` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-ant` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-c3p0` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-community-dialects` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-core` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-envers` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-graalvm` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-hikaricp` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-jcache` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-jpamodelgen` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-micrometer` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-proxool` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-spatial` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-testing` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.orm` | `hibernate-vibur` | `jar` | `-` | `6.4.10.Final` | - |
+| `org.hibernate.validator` | `hibernate-validator` | `jar` | `-` | `8.0.1.Final` | - |
+| `org.hibernate.validator` | `hibernate-validator-annotation-processor` | `jar` | `-` | `8.0.1.Final` | - |
+| `org.hsqldb` | `hsqldb` | `jar` | `-` | `2.7.3` | - |
+| `org.infinispan.protostream` | `protostream` | `jar` | `-` | `4.6.5.Final` | - |
+| `org.infinispan.protostream` | `protostream-processor` | `jar` | `-` | `4.6.5.Final` | - |
+| `org.infinispan.protostream` | `protostream-types` | `jar` | `-` | `4.6.5.Final` | - |
+| `org.infinispan` | `infinispan-anchored-keys` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-api` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cachestore-jdbc` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cachestore-jdbc-common` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cachestore-jdbc-common-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cachestore-jdbc-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cachestore-remote` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cachestore-rocksdb` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cachestore-sql` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cdi-common` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cdi-common-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cdi-embedded` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cdi-embedded-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cdi-remote` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cdi-remote-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-checkstyle` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cli-client` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cli-client-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-client-hotrod` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-client-hotrod-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-client-rest` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-client-rest-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-cloudevents-integration` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-clustered-counter` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-clustered-lock` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-commons` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-commons-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-commons-test` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-component-annotations` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-component-processor` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-console` | `jar` | `-` | `14.0.15.Final` | - |
+| `org.infinispan` | `infinispan-core` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-core-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-extended-statistics` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-hibernate-cache-commons` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-hibernate-cache-spi` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-hibernate-cache-v60` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-hibernate-cache-v62` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-hotrod` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-hotrod-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-jboss-marshalling` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-jcache` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-jcache-commons` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-jcache-remote` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-key-value-store-client` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-logging-annotations` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-logging-processor` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-marshaller-kryo` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-marshaller-kryo-bundle` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-marshaller-protostuff` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-marshaller-protostuff-bundle` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-multimap` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-multimap-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-objectfilter` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-query` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-query-core` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-query-dsl` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-query-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-remote-query-client` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-remote-query-server` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-scripting` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-core` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-hotrod` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-hotrod-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-memcached` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-resp` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-rest` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-router` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-runtime` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-runtime` | `jar` | `loader` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-testdriver-core` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-testdriver-core-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-testdriver-junit4` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-server-testdriver-junit5` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring-boot-starter-embedded` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring-boot-starter-remote` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring-boot3-starter-embedded` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring-boot3-starter-remote` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring5-common` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring5-embedded` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring5-remote` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring6-common` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring6-embedded` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-spring6-remote` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-tasks` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-tasks-api` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-tools` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.infinispan` | `infinispan-tools-jakarta` | `jar` | `-` | `14.0.33.Final` | - |
+| `org.influxdb` | `influxdb-java` | `jar` | `-` | `2.23` | - |
+| `org.jboss.logging` | `jboss-logging` | `jar` | `-` | `3.5.3.Final` | - |
+| `org.jdom` | `jdom2` | `jar` | `-` | `2.0.6.1` | - |
+| `org.jetbrains.kotlin` | `kotlin-compiler` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-compiler-embeddable` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-daemon-client` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-main-kts` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-osgi-bundle` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-reflect` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-script-runtime` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-scripting-common` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-scripting-ide-services` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-scripting-jvm` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-scripting-jvm-host` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-stdlib` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-stdlib-common` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-stdlib-jdk7` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-stdlib-jdk8` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-stdlib-js` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-test` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-test-annotations-common` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-test-common` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-test-js` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-test-junit` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-test-junit5` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlin` | `kotlin-test-testng` | `jar` | `-` | `1.9.25` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-android` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-core` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-core-jvm` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-debug` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-guava` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-javafx` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-jdk8` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-jdk9` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-play-services` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-reactive` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-reactor` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-rx2` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-rx3` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-slf4j` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-swing` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-test` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-coroutines-test-jvm` | `jar` | `-` | `1.7.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-cbor` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-cbor-jvm` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-core` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-core-jvm` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-hocon` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-json` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-json-jvm` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-json-okio` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-json-okio-jvm` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-properties` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-properties-jvm` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-protobuf` | `jar` | `-` | `1.6.3` | - |
+| `org.jetbrains.kotlinx` | `kotlinx-serialization-protobuf-jvm` | `jar` | `-` | `1.6.3` | - |
+| `org.jooq` | `jooq` | `jar` | `-` | `3.18.22` | - |
+| `org.jooq` | `jooq-codegen` | `jar` | `-` | `3.18.22` | - |
+| `org.jooq` | `jooq-kotlin` | `jar` | `-` | `3.18.22` | - |
+| `org.jooq` | `jooq-meta` | `jar` | `-` | `3.18.22` | - |
+| `org.junit.jupiter` | `junit-jupiter` | `jar` | `-` | `5.14.4` | - |
+| `org.junit.jupiter` | `junit-jupiter-api` | `jar` | `-` | `5.10.5` | - |
+| `org.junit.jupiter` | `junit-jupiter-engine` | `jar` | `-` | `5.10.5` | - |
+| `org.junit.jupiter` | `junit-jupiter-migrationsupport` | `jar` | `-` | `5.10.5` | - |
+| `org.junit.jupiter` | `junit-jupiter-params` | `jar` | `-` | `5.10.5` | - |
+| `org.junit.platform` | `junit-platform-commons` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-console` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-engine` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-jfr` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-launcher` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-reporting` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-runner` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-suite` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-suite-api` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-suite-commons` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-suite-engine` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.platform` | `junit-platform-testkit` | `jar` | `-` | `1.10.5` | - |
+| `org.junit.vintage` | `junit-vintage-engine` | `jar` | `-` | `5.10.5` | - |
+| `org.jvnet.staxex` | `stax-ex` | `jar` | `sources` | `2.1.0` | - |
+| `org.jvnet.staxex` | `stax-ex` | `jar` | `-` | `2.1.0` | - |
+| `org.liquibase` | `liquibase-cdi` | `jar` | `-` | `4.24.0` | - |
+| `org.liquibase` | `liquibase-core` | `jar` | `-` | `4.24.0` | - |
+| `org.mariadb.jdbc` | `mariadb-java-client` | `jar` | `-` | `3.3.3` | - |
+| `org.mariadb` | `r2dbc-mariadb` | `jar` | `-` | `1.1.4` | - |
+| `org.messaginghub` | `pooled-jms` | `jar` | `-` | `3.1.7` | - |
+| `org.mockito` | `mockito-android` | `jar` | `-` | `5.7.0` | - |
+| `org.mockito` | `mockito-core` | `jar` | `-` | `5.11.0` | - |
+| `org.mockito` | `mockito-errorprone` | `jar` | `-` | `5.7.0` | - |
+| `org.mockito` | `mockito-junit-jupiter` | `jar` | `-` | `5.11.0` | - |
+| `org.mockito` | `mockito-proxy` | `jar` | `-` | `5.7.0` | - |
+| `org.mockito` | `mockito-subclass` | `jar` | `-` | `5.7.0` | - |
+| `org.mongodb` | `bson` | `jar` | `-` | `4.11.5` | - |
+| `org.mongodb` | `bson-record-codec` | `jar` | `-` | `4.11.5` | - |
+| `org.mongodb` | `mongodb-driver-core` | `jar` | `-` | `4.11.5` | - |
+| `org.mongodb` | `mongodb-driver-legacy` | `jar` | `-` | `4.11.5` | - |
+| `org.mongodb` | `mongodb-driver-reactivestreams` | `jar` | `-` | `4.11.5` | - |
+| `org.mongodb` | `mongodb-driver-sync` | `jar` | `-` | `4.11.5` | - |
+| `org.neo4j.driver` | `neo4j-java-driver` | `jar` | `-` | `5.25.0` | - |
+| `org.osgi` | `org.osgi.annotation.bundle` | `jar` | `-` | `2.0.0` | - |
+| `org.osgi` | `osgi.annotation` | `jar` | `-` | `8.1.0` | - |
+| `org.postgresql` | `postgresql` | `jar` | `-` | `42.6.2` | - |
+| `org.postgresql` | `r2dbc-postgresql` | `jar` | `-` | `1.0.7.RELEASE` | - |
+| `org.projectlombok` | `lombok` | `jar` | `-` | `1.18.48` | - |
+| `org.quartz-scheduler` | `quartz` | `jar` | `-` | `2.3.2` | - |
+| `org.quartz-scheduler` | `quartz-jobs` | `jar` | `-` | `2.3.2` | - |
+| `org.reactivestreams` | `reactive-streams` | `jar` | `-` | `1.0.4` | - |
+| `org.seleniumhq.selenium` | `htmlunit-driver` | `jar` | `-` | `4.13.0` | - |
+| `org.seleniumhq.selenium` | `selenium-api` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-chrome-driver` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-chromium-driver` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-devtools-v116` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-devtools-v117` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-devtools-v118` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-devtools-v85` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-edge-driver` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-firefox-driver` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-grid` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-http` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-ie-driver` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-java` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-json` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-manager` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-remote-driver` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-safari-driver` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-session-map-jdbc` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-session-map-redis` | `jar` | `-` | `4.14.1` | - |
+| `org.seleniumhq.selenium` | `selenium-support` | `jar` | `-` | `4.14.1` | - |
+| `org.skyscreamer` | `jsonassert` | `jar` | `-` | `1.5.3` | - |
+| `org.slf4j` | `jcl-over-slf4j` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `jul-to-slf4j` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `log4j-over-slf4j` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `slf4j-api` | `jar` | `-` | `2.0.19` | - |
+| `org.slf4j` | `slf4j-ext` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `slf4j-jdk-platform-logging` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `slf4j-jdk14` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `slf4j-log4j12` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `slf4j-nop` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `slf4j-reload4j` | `jar` | `-` | `2.0.16` | - |
+| `org.slf4j` | `slf4j-simple` | `jar` | `-` | `2.0.16` | - |
+| `org.springdoc` | `springdoc-openapi-starter-webmvc-ui` | `jar` | `-` | `2.3.0` | - |
+| `org.springframework.amqp` | `spring-amqp` | `jar` | `-` | `3.1.8` | - |
+| `org.springframework.amqp` | `spring-rabbit` | `jar` | `-` | `3.1.8` | - |
+| `org.springframework.amqp` | `spring-rabbit-junit` | `jar` | `-` | `3.1.8` | - |
+| `org.springframework.amqp` | `spring-rabbit-stream` | `jar` | `-` | `3.1.8` | - |
+| `org.springframework.amqp` | `spring-rabbit-test` | `jar` | `-` | `3.1.8` | - |
+| `org.springframework.batch` | `spring-batch-core` | `jar` | `-` | `5.1.2` | - |
+| `org.springframework.batch` | `spring-batch-infrastructure` | `jar` | `-` | `5.1.2` | - |
+| `org.springframework.batch` | `spring-batch-integration` | `jar` | `-` | `5.1.2` | - |
+| `org.springframework.batch` | `spring-batch-test` | `jar` | `-` | `5.1.2` | - |
+| `org.springframework.boot` | `spring-boot` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-actuator` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-actuator-autoconfigure` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-autoconfigure` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-autoconfigure-processor` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-buildpack-platform` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-configuration-metadata` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-configuration-processor` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-devtools` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-docker-compose` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-jarmode-layertools` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-loader` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-loader-classic` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-loader-tools` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-properties-migrator` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-activemq` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-actuator` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-amqp` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-aop` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-artemis` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-batch` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-cache` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-cassandra` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-cassandra-reactive` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-couchbase` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-couchbase-reactive` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-elasticsearch` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-jdbc` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-jpa` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-ldap` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-mongodb` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-mongodb-reactive` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-neo4j` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-r2dbc` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-redis` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-redis-reactive` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-data-rest` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-freemarker` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-graphql` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-groovy-templates` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-hateoas` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-integration` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-jdbc` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-jersey` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-jetty` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-jooq` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-json` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-log4j2` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-logging` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-mail` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-mustache` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-oauth2-authorization-server` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-oauth2-client` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-oauth2-resource-server` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-pulsar` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-pulsar-reactive` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-quartz` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-reactor-netty` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-rsocket` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-security` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-test` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-thymeleaf` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-tomcat` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-undertow` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-validation` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-web` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-web-services` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-webflux` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-starter-websocket` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-test` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-test-autoconfigure` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.boot` | `spring-boot-testcontainers` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-cassandra` | `jar` | `-` | `4.2.12` | - |
+| `org.springframework.data` | `spring-data-commons` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-couchbase` | `jar` | `-` | `5.2.12` | - |
+| `org.springframework.data` | `spring-data-elasticsearch` | `jar` | `-` | `5.2.12` | - |
+| `org.springframework.data` | `spring-data-envers` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-jdbc` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-jpa` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-keyvalue` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-ldap` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-mongodb` | `jar` | `-` | `4.2.12` | - |
+| `org.springframework.data` | `spring-data-neo4j` | `jar` | `-` | `7.2.12` | - |
+| `org.springframework.data` | `spring-data-r2dbc` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-redis` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-relational` | `jar` | `-` | `3.2.12` | - |
+| `org.springframework.data` | `spring-data-rest-core` | `jar` | `-` | `4.2.12` | - |
+| `org.springframework.data` | `spring-data-rest-hal-explorer` | `jar` | `-` | `4.2.12` | - |
+| `org.springframework.data` | `spring-data-rest-webmvc` | `jar` | `-` | `4.2.12` | - |
+| `org.springframework.graphql` | `spring-graphql` | `jar` | `-` | `1.2.9` | - |
+| `org.springframework.graphql` | `spring-graphql-test` | `jar` | `-` | `1.2.9` | - |
+| `org.springframework.hateoas` | `spring-hateoas` | `jar` | `-` | `2.2.5` | - |
+| `org.springframework.integration` | `spring-integration-amqp` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-camel` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-cassandra` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-core` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-debezium` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-event` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-feed` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-file` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-ftp` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-graphql` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-groovy` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-hazelcast` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-http` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-ip` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-jdbc` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-jms` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-jmx` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-jpa` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-kafka` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-mail` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-mongodb` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-mqtt` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-r2dbc` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-redis` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-rsocket` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-scripting` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-security` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-sftp` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-smb` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-stomp` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-stream` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-syslog` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-test` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-test-support` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-webflux` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-websocket` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-ws` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-xml` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-xmpp` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-zeromq` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-zip` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.integration` | `spring-integration-zookeeper` | `jar` | `-` | `6.2.11` | - |
+| `org.springframework.kafka` | `spring-kafka` | `jar` | `-` | `3.1.10` | - |
+| `org.springframework.kafka` | `spring-kafka-test` | `jar` | `-` | `3.1.10` | - |
+| `org.springframework.ldap` | `spring-ldap-core` | `jar` | `-` | `3.2.8` | - |
+| `org.springframework.ldap` | `spring-ldap-ldif-core` | `jar` | `-` | `3.2.8` | - |
+| `org.springframework.ldap` | `spring-ldap-odm` | `jar` | `-` | `3.2.8` | - |
+| `org.springframework.ldap` | `spring-ldap-test` | `jar` | `-` | `3.2.8` | - |
+| `org.springframework.pulsar` | `spring-pulsar` | `jar` | `-` | `1.0.12` | - |
+| `org.springframework.pulsar` | `spring-pulsar-cache-provider` | `jar` | `-` | `1.0.12` | - |
+| `org.springframework.pulsar` | `spring-pulsar-cache-provider-caffeine` | `jar` | `-` | `1.0.12` | - |
+| `org.springframework.pulsar` | `spring-pulsar-reactive` | `jar` | `-` | `1.0.12` | - |
+| `org.springframework.restdocs` | `spring-restdocs-asciidoctor` | `jar` | `-` | `3.0.3` | - |
+| `org.springframework.restdocs` | `spring-restdocs-core` | `jar` | `-` | `3.0.3` | - |
+| `org.springframework.restdocs` | `spring-restdocs-mockmvc` | `jar` | `-` | `3.0.3` | - |
+| `org.springframework.restdocs` | `spring-restdocs-restassured` | `jar` | `-` | `3.0.3` | - |
+| `org.springframework.restdocs` | `spring-restdocs-webtestclient` | `jar` | `-` | `3.0.3` | - |
+| `org.springframework.retry` | `spring-retry` | `jar` | `-` | `2.0.10` | - |
+| `org.springframework.security` | `spring-security-acl` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-aspects` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-cas` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-config` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-core` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-crypto` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-data` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-ldap` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-messaging` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-oauth2-authorization-server` | `jar` | `-` | `1.2.7` | - |
+| `org.springframework.security` | `spring-security-oauth2-client` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-oauth2-core` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-oauth2-jose` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-oauth2-resource-server` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-rsocket` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-saml2-service-provider` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-taglibs` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-test` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.security` | `spring-security-web` | `jar` | `-` | `6.2.8` | - |
+| `org.springframework.session` | `spring-session-core` | `jar` | `-` | `3.2.6` | - |
+| `org.springframework.session` | `spring-session-data-mongodb` | `jar` | `-` | `3.2.6` | - |
+| `org.springframework.session` | `spring-session-data-redis` | `jar` | `-` | `3.2.6` | - |
+| `org.springframework.session` | `spring-session-hazelcast` | `jar` | `-` | `3.2.6` | - |
+| `org.springframework.session` | `spring-session-jdbc` | `jar` | `-` | `3.2.6` | - |
+| `org.springframework.ws` | `spring-ws-core` | `jar` | `-` | `4.0.11` | - |
+| `org.springframework.ws` | `spring-ws-security` | `jar` | `-` | `4.0.11` | - |
+| `org.springframework.ws` | `spring-ws-support` | `jar` | `-` | `4.0.11` | - |
+| `org.springframework.ws` | `spring-ws-test` | `jar` | `-` | `4.0.11` | - |
+| `org.springframework.ws` | `spring-xml` | `jar` | `-` | `4.0.11` | - |
+| `org.springframework` | `spring-aop` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-aspects` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-beans` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-context` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-context-indexer` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-context-support` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-core` | `jar` | `-` | `6.1.15` | `CVE-2026-41855` (critical)<br>`CVE-2026-47884` (critical)<br>`CVE-2026-47891` (critical)<br>`CVE-2026-47892` (critical)<br>`CVE-2026-59313` (critical)<br>`CVE-2026-59283` (critical)<br>`CVE-2026-41838` (high)<br>`CVE-2026-41842` (high)<br>`CVE-2026-41848` (high)<br>`CVE-2026-41850` (high)<br>`CVE-2026-41851` (high)<br>`CVE-2026-47885` (high)<br>`CVE-2026-47886` (high)<br>`CVE-2026-47888` (high)<br>`CVE-2026-47893` (high)<br>`CVE-2026-59282` (high)<br>`CVE-2026-22740` (medium)<br>`CVE-2026-41844` (medium)<br>`CVE-2026-41845` (medium)<br>`CVE-2026-41846` (medium)<br>`CVE-2026-47887` (medium)<br>`CVE-2026-59281` (medium)<br>`CVE-2026-22737` (medium)<br>`CVE-2026-41840` (medium)<br>`CVE-2026-41841` (medium)<br>`CVE-2026-41843` (medium)<br>`CVE-2026-22745` (medium)<br>`CVE-2026-41852` (medium)<br>`CVE-2026-41853` (medium)<br>`CVE-2026-59280` (medium)<br>`CVE-2026-41839` (medium)<br>`CVE-2026-59314` (low)<br>`CVE-2026-22741` (low)<br>`CVE-2026-22735` (low) |
+| `org.springframework` | `spring-core-test` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-expression` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-instrument` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-jcl` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-jdbc` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-jms` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-messaging` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-orm` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-oxm` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-r2dbc` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-test` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-tx` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-web` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-webflux` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-webmvc` | `jar` | `-` | `6.1.15` | - |
+| `org.springframework` | `spring-websocket` | `jar` | `-` | `6.1.15` | - |
+| `org.testcontainers` | `activemq` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `azure` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `cassandra` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `chromadb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `clickhouse` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `cockroachdb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `consul` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `couchbase` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `cratedb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `database-commons` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `db2` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `dynalite` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `elasticsearch` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `gcloud` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `hivemq` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `influxdb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `jdbc` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `junit-jupiter` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `k3s` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `k6` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `kafka` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `localstack` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `mariadb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `milvus` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `minio` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `mockserver` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `mongodb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `mssqlserver` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `mysql` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `neo4j` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `nginx` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `oceanbase` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `ollama` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `openfga` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `oracle-free` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `oracle-xe` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `orientdb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `postgresql` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `presto` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `pulsar` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `qdrant` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `questdb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `r2dbc` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `rabbitmq` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `redpanda` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `selenium` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `solace` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `solr` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `spock` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `testcontainers` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `tidb` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `toxiproxy` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `trino` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `vault` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `weaviate` | `jar` | `-` | `1.19.8` | - |
+| `org.testcontainers` | `yugabytedb` | `jar` | `-` | `1.19.8` | - |
+| `org.thymeleaf.extras` | `thymeleaf-extras-springsecurity6` | `jar` | `-` | `3.1.2.RELEASE` | - |
+| `org.thymeleaf` | `thymeleaf` | `jar` | `-` | `3.1.2.RELEASE` | - |
+| `org.thymeleaf` | `thymeleaf-spring6` | `jar` | `-` | `3.1.2.RELEASE` | - |
+| `org.webjars` | `webjars-locator-core` | `jar` | `-` | `0.55` | - |
+| `org.xerial` | `sqlite-jdbc` | `jar` | `-` | `3.43.2.2` | - |
+| `org.xmlunit` | `xmlunit-assertj` | `jar` | `-` | `2.9.1` | - |
+| `org.xmlunit` | `xmlunit-assertj3` | `jar` | `-` | `2.9.1` | - |
+| `org.xmlunit` | `xmlunit-core` | `jar` | `-` | `2.9.1` | - |
+| `org.xmlunit` | `xmlunit-jakarta-jaxb-impl` | `jar` | `-` | `2.9.1` | - |
+| `org.xmlunit` | `xmlunit-legacy` | `jar` | `-` | `2.9.1` | - |
+| `org.xmlunit` | `xmlunit-matchers` | `jar` | `-` | `2.9.1` | - |
+| `org.xmlunit` | `xmlunit-placeholders` | `jar` | `-` | `2.9.1` | - |
+| `org.yaml` | `snakeyaml` | `jar` | `-` | `2.2` | - |
+| `redis.clients` | `jedis` | `jar` | `-` | `5.0.2` | - |
+| `wsdl4j` | `wsdl4j` | `jar` | `-` | `1.6.3` | - |
 
 ---
 
@@ -1538,6 +1538,7 @@ Plugins versioned via `<pluginManagement>` - the approved set consumers inherit.
 | `org.apache.maven.plugins` | `maven-source-plugin` | `3.4.0` |
 | `org.apache.maven.plugins` | `maven-surefire-plugin` | `3.6.0` |
 | `org.jacoco` | `jacoco-maven-plugin` | `0.8.15` |
+| `org.owasp` | `dependency-check-maven` | `12.2.2` |
 | `org.springframework.boot` | `spring-boot-maven-plugin` | `3.2.12` |
 
 Plugins actually bound in this module's build:
@@ -1561,6 +1562,7 @@ module. A new library or plugin introduced with a version property shows up here
 | :--- | :--- |
 | `assertj.version` | `3.27.7` |
 | `commons-lang3.version` | `3.20.0` |
+| `dependency-check.version` | `12.2.2` |
 | `guava.version` | `33.7.1-jre` |
 | `jackson-bom.version` | `3.1.6` |
 | `jackson.version` | `2.17.2` |
@@ -1623,6 +1625,57 @@ Alternatively import for `dependencyManagement` only (JDK level, plugins and rep
 ```
 
 When declaring dependencies, **omit the `<version>` element** to inherit the approved version.
+
+---
+
+## Vulnerability Scanning (CVEs)
+
+Dependencies are checked with **OWASP dependency-check**
+(`org.owasp:dependency-check-maven`, version `12.2.2`), managed for every module that inherits
+these standards. It works **keyless**: the NVD API is accessed unauthenticated (throttled to one
+request per 8 seconds) and the Google OSV feed provides additional coverage without any key. To
+lift the NVD throttle, supply an API key via `-DnvdApiKey=...`, the `NVD_API_KEY` environment
+variable, or a Maven `settings.xml` server entry referenced by `nvdApiServerId`.
+
+Scanning is **opt-in** - it is not bound to the build lifecycle because it needs network access
+and performs a one-time NVD feed download on the first run. Scan each consumer application
+(one per JDK flavor under `test-applications/`; the first run downloads the NVD feed and may
+take a while):
+
+```
+mvn -f test-applications/sample-springboot-app-jdk17/pom.xml org.owasp:dependency-check-maven:check
+mvn -f test-applications/sample-springboot-app-jdk-21/pom.xml org.owasp:dependency-check-maven:check
+mvn -f test-applications/sample-springboot-app-jdk-25/pom.xml org.owasp:dependency-check-maven:check
+```
+
+Scan the whole repository (aggregated report in the reactor root `target/`):
+
+```
+mvn -f pom.xml org.owasp:dependency-check-maven:aggregate
+```
+
+Reports are written as `target/dependency-check-report.html` and
+`target/dependency-check-report.json`. A `pom`-packaging BOM module resolves no libraries to
+scan, so the scan runs against the **consumer applications** under `test-applications/`. Every
+report found there is merged into a single per-GAV CVE index at generation time and annotated
+per library version in the **Managed Dependencies** table above (`known CVEs` column, matched on
+the exact GAV). Regenerate (`mvn generate-resources`) after a re-scan to refresh everything.
+
+### Last local scan
+
+| metric | value |
+| :--- | :--- |
+| scanned applications | `1` |
+| unique packages scanned | `15` |
+| unique vulnerable packages | `4` |
+| vulnerabilities found | `94` |
+
+Per application:
+
+- `sample-springboot-app-jdk17`: `15` packages scanned, `4` vulnerable, `94` findings
+
+Findings are annotated per library version in the **Known CVEs** column of the **Managed
+Dependencies** table above. Full details: each app's `target/dependency-check-report.html`.
 
 ---
 
