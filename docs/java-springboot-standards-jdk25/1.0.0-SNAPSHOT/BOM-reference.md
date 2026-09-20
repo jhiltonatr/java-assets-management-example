@@ -1964,6 +1964,7 @@ Plugins versioned via `<pluginManagement>` - the approved set consumers inherit.
 | groupId | artifactId | version |
 | :--- | :--- | :--- |
 | `com.diffplug.spotless` | `spotless-maven-plugin` | `3.10.2` |
+| `dev.limburg.checkstyle` | `checkstyle-formatter-maven-plugin` | `0.5.3` |
 | `org.apache.maven.plugins` | `maven-antrun-plugin` | `3.1.0` |
 | `org.apache.maven.plugins` | `maven-assembly-plugin` | `3.7.1` |
 | `org.apache.maven.plugins` | `maven-checkstyle-plugin` | `3.6.0` |
@@ -2015,6 +2016,7 @@ module. A new library or plugin introduced with a version property shows up here
 | `junit.version` | `6.1.3` |
 | `logback.version` | `1.6.3` |
 | `lombok.version` | `1.18.48` |
+| `maven-checkstyle-formatter-plugin.version` | `0.5.3` |
 | `maven-checkstyle-plugin.version` | `3.6.0` |
 | `maven-clean-plugin.version` | `3.5.0` |
 | `maven-compiler-plugin.version` | `3.16.0` |

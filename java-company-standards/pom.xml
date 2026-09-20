@@ -40,6 +40,7 @@
         <maven-site-plugin.version>3.22.0</maven-site-plugin.version>
         <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
+        <maven-checkstyle-formatter-plugin.version>0.5.3</maven-checkstyle-formatter-plugin.version>
         <spotless-maven-plugin.version>3.10.2</spotless-maven-plugin.version>
 
         <!-- Library versions (latest releases compatible with Java 25) -->
@@ -438,6 +439,20 @@
                             <version>${plexus-utils.version}</version>
                         </dependency>
                     </dependencies>
+                </plugin>
+
+                <plugin>
+                    <groupId>dev.limburg.checkstyle</groupId>
+                    <artifactId>checkstyle-formatter-maven-plugin</artifactId>
+                    <version>${maven-checkstyle-formatter-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>write</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <plugin>

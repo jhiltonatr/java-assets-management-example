@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SampleApplication {
 
-    public static void main(String[] args) {
+    void main(final String[] args) {
         SpringApplication.run(SampleApplication.class, args);
     }
 
