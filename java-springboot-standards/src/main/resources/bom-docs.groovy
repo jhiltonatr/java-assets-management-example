@@ -34,6 +34,10 @@ def cveSevRank = { String s ->
         .getOrDefault((s ?: 'n/a').toLowerCase(), 5)
 }
 
+def cveSevRankIcon = { String s ->
+    ['critical': ':triangular_flag_on_post:', 'high': ':red_circle:', 'medium': ':warning:', 'moderate': ':warning:', 'low': ':small_blue_diamond:', 'info': ':small_blue_diamond:', 'n/a': ':small_blue_diamond:']
+            .getOrDefault((s ?: 'n/a').toLowerCase(), '')
+}
 /*
  * CVE data comes from the OWASP dependency-check reports of the scanned consumer applications
  * (one per JDK flavor under <repo-root>/test-applications/), because a 'pom'-packaging BOM module
@@ -75,7 +79,8 @@ cveReportFiles.each { repFile ->
                             def version = rest.substring(at + 1)
                             cveByGav["$g:$a:$version"] = (d.vulnerabilities ?: []).collect { v ->
                                 [id: v.name ?: 'n/a', severity: v.severity ?: 'n/a',
-                                 score: v.cvssScore ?: null, source: v.source ?: '']
+                                 score: v.cvssScore ?: null, source: v.source ?: '',
+                                 icon: cveSevRankIcon(v.severity)]
                             }
                         }
                     }
@@ -150,7 +155,7 @@ if (managed.empty) {
             if (cves) {
                 cves.sort { a, b -> cveSevRank(a.severity) <=> cveSevRank(b.severity) }
                 cveCell = cves.collect { c ->
-                    c.score != null ? "`${c.id}` (${c.severity.toLowerCase()}, ${c.score})" : "`${c.id}` (${c.severity.toLowerCase()})"
+                    c.score != null ? "`${c.id}` (${c.icon}${c.severity.toLowerCase()}, ${c.score})" : "`${c.id}` (${c.icon}${c.severity.toLowerCase()})"
                 }.join('<br>')
             }
         }
