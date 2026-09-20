@@ -15,16 +15,9 @@
     <packaging>pom</packaging>
 
     <name>Java Company Standards</name>
-    <description>
-        Shared, JDK-level-agnostic parent holding all plain-Java company standards: build plugin
-        versions, managed library versions, corporate repositories and distribution targets.
-        Defaults to JDK 17 and is extended by the concrete artifacts java-company-standards-jdk17
-        and java-company-standards-jdk21, which only pin the JDK level. Consumers should use the
-        concrete -jdkXX BOMs.
-    </description>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>25</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>
 

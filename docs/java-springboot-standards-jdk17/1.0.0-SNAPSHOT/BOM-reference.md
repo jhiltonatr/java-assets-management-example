@@ -1562,6 +1562,7 @@ module. A new library or plugin introduced with a version property shows up here
 | `assertj.version` | `3.27.7` |
 | `commons-lang3.version` | `3.20.0` |
 | `guava.version` | `33.7.1-jre` |
+| `jackson-bom.version` | `3.1.6` |
 | `jackson.version` | `2.17.2` |
 | `jacoco-maven-plugin.version` | `0.8.15` |
 | `java.version` | `17` |

@@ -22,7 +22,8 @@
         <maven.compiler.release>17</maven.compiler.release>
         <checkstyle.location>company/checkstyle-jdk17.xml</checkstyle.location>
 
-        <!-- Spring Boot 3.2.x ships the Logback 1.4.x line and supports JUnit 5. -->
+        <spring-boot.version>3.2.12</spring-boot.version>
+        <springdoc.version>2.3.0</springdoc.version>
         <logback.version>1.4.14</logback.version>
         <jackson.version>2.17.2</jackson.version>
         <junit.version>5.14.4</junit.version>

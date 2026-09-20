@@ -14,6 +14,11 @@
  */
 def props = project.properties
 
+if (project.packaging != 'pom') {
+    println "[bom-docs] skipped $project.artifactId - BOM reference docs only for 'pom' packaging modules"
+    return
+}
+
 def versionProps = props.keySet().toList()
         .collect { it.toString() }
         .findAll { it.toLowerCase().contains('version') }

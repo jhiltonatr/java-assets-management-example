@@ -1355,7 +1355,7 @@ plus the expanded contents of imported platform BOMs.
 | `org.slf4j` | `slf4j-nop` | `jar` | `-` | `2.0.18` |
 | `org.slf4j` | `slf4j-reload4j` | `jar` | `-` | `2.0.18` |
 | `org.slf4j` | `slf4j-simple` | `jar` | `-` | `2.0.18` |
-| `org.springdoc` | `springdoc-openapi-starter-webmvc-ui` | `jar` | `-` | `2.3.0` |
+| `org.springdoc` | `springdoc-openapi-starter-webmvc-ui` | `jar` | `-` | `3.1.1` |
 | `org.springframework.amqp` | `spring-amqp` | `jar` | `-` | `4.1.1` |
 | `org.springframework.amqp` | `spring-amqp-client` | `jar` | `-` | `4.1.1` |
 | `org.springframework.amqp` | `spring-rabbit` | `jar` | `-` | `4.1.1` |
@@ -2032,7 +2032,7 @@ module. A new library or plugin introduced with a version property shows up here
 | `slf4j.version` | `2.0.19` |
 | `spotless-maven-plugin.version` | `3.10.2` |
 | `spring-boot.version` | `4.1.1` |
-| `springdoc.version` | `2.3.0` |
+| `springdoc.version` | `3.1.1` |
 
 ---
 

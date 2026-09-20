@@ -24,8 +24,10 @@
     </description>
 
     <properties>
-        <spring-boot.version>3.2.12</spring-boot.version>
-        <springdoc.version>2.3.0</springdoc.version>
+        <spring-boot.version>4.1.1</spring-boot.version>
+        <springdoc.version>3.1.1</springdoc.version>
+        <jackson-bom.version>3.1.6</jackson-bom.version>
+        <logback.version>1.6.3</logback.version>
     </properties>
 
     <dependencyManagement>
@@ -74,6 +76,7 @@
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
                 <version>5.0.0</version>
+                <inherited>false</inherited>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.groovy</groupId>
