@@ -155,7 +155,7 @@ if (managed.empty) {
             if (cves) {
                 cves.sort { a, b -> cveSevRank(a.severity) <=> cveSevRank(b.severity) }
                 cveCell = cves.collect { c ->
-                    c.score != null ? "`${c.id}` (${c.icon}${c.severity.toLowerCase()}, ${c.score})" : "`${c.id}` (${c.icon}${c.severity.toLowerCase()})"
+                    c.score != null ? "`${c.id}` (${c.icon} ${c.severity.toLowerCase()}, ${c.score})" : "`${c.id}` (${c.icon} ${c.severity.toLowerCase()})"
                 }.join('<br>')
             }
         }
