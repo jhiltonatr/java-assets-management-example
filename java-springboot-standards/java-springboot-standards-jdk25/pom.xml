@@ -21,6 +21,7 @@
         <java.version>25</java.version>
         <maven.compiler.release>25</maven.compiler.release>
         <checkstyle.location>company/checkstyle-jdk25.xml</checkstyle.location>
+        <checkstyle-suppression.location>company/suppressions-jdk25.xml</checkstyle-suppression.location>
     </properties>
 
     <dependencyManagement>

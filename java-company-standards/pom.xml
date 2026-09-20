@@ -23,6 +23,7 @@
 
         <company.team>Bestest Company</company.team>
         <checkstyle.location>company/checkstyle.xml</checkstyle.location>
+        <checkstyle-suppression.location>company/suppressions.xml</checkstyle-suppression.location>
 
         <!-- Build plugin versions (latest stable releases compatible with Java 25) -->
         <maven-clean-plugin.version>3.5.0</maven-clean-plugin.version>
@@ -422,6 +423,9 @@
                         <failsOnError>true</failsOnError>
                         <failOnViolation>true</failOnViolation>
                         <violationSeverity>warning</violationSeverity>
+
+                        <suppressionsLocation>${checkstyle-suppression.location}</suppressionsLocation>
+                        <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
                     </configuration>
                     <executions>
                         <execution>

@@ -25,6 +25,7 @@
     </description>
 
     <properties>
+<!--        <checkstyle-suppression.location>${project.basedir}/checkstyle-suppressions.xml</checkstyle-suppression.location>-->
         <company.team>Jhilton's All Stars</company.team>
     </properties>
 

@@ -21,6 +21,7 @@
         <java.version>17</java.version>
         <maven.compiler.release>17</maven.compiler.release>
         <checkstyle.location>company/checkstyle-jdk17.xml</checkstyle.location>
+        <checkstyle-suppression.location>company/suppressions-jdk17.xml</checkstyle-suppression.location>
 
         <spring-boot.version>3.2.12</spring-boot.version>
         <springdoc.version>2.3.0</springdoc.version>
