@@ -48,7 +48,7 @@ plus the expanded contents of imported platform BOMs.
 | `com.datastax.oss` | `native-protocol` | `jar` | `-` | `1.5.2` | - |
 | `com.fasterxml.jackson.core` | `jackson-annotations` | `jar` | `-` | `2.21` | - |
 | `com.fasterxml.jackson.core` | `jackson-core` | `jar` | `-` | `2.21.5` | - |
-| `com.fasterxml.jackson.core` | `jackson-databind` | `jar` | `-` | `2.22.2` | - |
+| `com.fasterxml.jackson.core` | `jackson-databind` | `jar` | `-` | `2.22.3` | - |
 | `com.fasterxml.jackson.dataformat` | `jackson-dataformat-avro` | `jar` | `-` | `2.21.5` | - |
 | `com.fasterxml.jackson.dataformat` | `jackson-dataformat-cbor` | `jar` | `-` | `2.21.5` | - |
 | `com.fasterxml.jackson.dataformat` | `jackson-dataformat-csv` | `jar` | `-` | `2.21.5` | - |
@@ -1283,9 +1283,9 @@ plus the expanded contents of imported platform BOMs.
 | `org.mariadb` | `r2dbc-mariadb` | `jar` | `-` | `1.4.1` | - |
 | `org.messaginghub` | `pooled-jms` | `jar` | `-` | `3.2.3` | - |
 | `org.mockito` | `mockito-android` | `jar` | `-` | `5.23.0` | - |
-| `org.mockito` | `mockito-core` | `jar` | `-` | `5.23.0` | - |
+| `org.mockito` | `mockito-core` | `jar` | `-` | `5.24.0` | - |
 | `org.mockito` | `mockito-errorprone` | `jar` | `-` | `5.23.0` | - |
-| `org.mockito` | `mockito-junit-jupiter` | `jar` | `-` | `5.23.0` | - |
+| `org.mockito` | `mockito-junit-jupiter` | `jar` | `-` | `5.24.0` | - |
 | `org.mockito` | `mockito-proxy` | `jar` | `-` | `5.23.0` | - |
 | `org.mockito` | `mockito-subclass` | `jar` | `-` | `5.23.0` | - |
 | `org.mongodb.scala` | `mongo-scala-bson_2.11` | `jar` | `-` | `5.8.1` | - |
@@ -1347,7 +1347,7 @@ plus the expanded contents of imported platform BOMs.
 | `org.slf4j` | `jcl-over-slf4j` | `jar` | `-` | `2.0.18` | - |
 | `org.slf4j` | `jul-to-slf4j` | `jar` | `-` | `2.0.18` | - |
 | `org.slf4j` | `log4j-over-slf4j` | `jar` | `-` | `2.0.18` | - |
-| `org.slf4j` | `slf4j-api` | `jar` | `-` | `2.0.19` | - |
+| `org.slf4j` | `slf4j-api` | `jar` | `-` | `2.0.20` | - |
 | `org.slf4j` | `slf4j-ext` | `jar` | `-` | `2.0.18` | - |
 | `org.slf4j` | `slf4j-jdk-platform-logging` | `jar` | `-` | `2.0.18` | - |
 | `org.slf4j` | `slf4j-jdk14` | `jar` | `-` | `2.0.18` | - |
@@ -2009,8 +2009,8 @@ module. A new library or plugin introduced with a version property shows up here
 | `commons-lang3.version` | `3.20.0` |
 | `dependency-check.version` | `12.2.2` |
 | `guava.version` | `33.7.1-jre` |
-| `jackson-bom.version` | `3.1.6` |
-| `jackson.version` | `2.22.2` |
+| `jackson-bom.version` | `3.2.3` |
+| `jackson.version` | `2.22.3` |
 | `jacoco-maven-plugin.version` | `0.8.15` |
 | `java.version` | `25` |
 | `junit.version` | `6.1.3` |
@@ -2031,9 +2031,9 @@ module. A new library or plugin introduced with a version property shows up here
 | `maven-site-plugin.version` | `3.22.0` |
 | `maven-source-plugin.version` | `3.4.0` |
 | `maven-surefire-plugin.version` | `3.6.0` |
-| `mockito.version` | `5.23.0` |
+| `mockito.version` | `5.24.0` |
 | `plexus-utils.version` | `4.0.3` |
-| `slf4j.version` | `2.0.19` |
+| `slf4j.version` | `2.0.20` |
 | `spotless-maven-plugin.version` | `3.10.2` |
 | `spring-boot.version` | `4.1.1` |
 | `springdoc.version` | `3.1.1` |

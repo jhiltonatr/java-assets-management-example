@@ -26,7 +26,7 @@
     <properties>
         <spring-boot.version>4.1.1</spring-boot.version>
         <springdoc.version>3.1.1</springdoc.version>
-        <jackson-bom.version>3.1.6</jackson-bom.version>
+        <jackson-bom.version>3.2.3</jackson-bom.version>
         <logback.version>1.6.3</logback.version>
     </properties>
 
